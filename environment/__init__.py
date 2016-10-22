@@ -7,9 +7,9 @@ import random
 
 from pygame import display, draw
 
-from main import scale, gui
+from main import GUI
 
-
+scale = 30
 def grid(gui, x, y, scale=15, color=(255, 255, 255)):
     for i in range(x):
         draw.line(gui, (color), (i * scale, 0), (i * scale, y * scale))
@@ -18,8 +18,8 @@ def grid(gui, x, y, scale=15, color=(255, 255, 255)):
     draw.rect(gui, (250, 0, 0), (0, 0, x * scale + 1, y * scale + 1), 1)
 
 
-def create_grid(x, y, scale):
-    grid(gui, x, y, scale)
+def create_grid(x, y):
+    grid(GUI, x, y, scale)
 
     while True:  # debug
         # color=(randint(0,255),randint(0,255),randint(0,255))

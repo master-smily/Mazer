@@ -7,13 +7,12 @@ Created on 20 Oct 2016
 import pygame
 from pygame import display
 
-import environment
+from environment import create_grid, scale
 
-scale = 30
 x_blocks = 10  # int(input('x_blocks: '))
 y_blocks = 10  # int(input('y_blocks: '))
-gui = display.set_mode([x_blocks * scale + 1, y_blocks * scale + 1])
+GUI = display.set_mode([x_blocks * scale + 1, y_blocks * scale + 1])
 
 if __name__ == '__main__':
     pygame.init()
-    environment.create_grid(x_blocks, y_blocks, scale)
+    create_grid(x_blocks, y_blocks)
