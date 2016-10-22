@@ -5,11 +5,11 @@ Created on 20 Oct 2016
 '''
 import random
 
-from pygame import display, draw
+from pygame import display, draw, surface
 
 from main import GUI
 
-scale = 30
+unit = 30
 def grid(gui, x, y, scale=15, color=(255, 255, 255)):
     for i in range(x):
         draw.line(gui, (color), (i * scale, 0), (i * scale, y * scale))
@@ -19,7 +19,7 @@ def grid(gui, x, y, scale=15, color=(255, 255, 255)):
 
 
 def create_grid(x, y):
-    grid(GUI, x, y, scale)
+    grid(GUI, x, y, unit)
 
     while True:  # debug
         # color=(randint(0,255),randint(0,255),randint(0,255))
@@ -28,13 +28,25 @@ def create_grid(x, y):
 
 def depth(x, y):
     blocks = x * y
+    white = (255, 255, 255, 255)
+    stack = []
     x_pos = random.randint(0, x - 1)
     y_pos = random.randint(0, y - 1)
     while blocks is not None:
-        side = ['upp', 'right', 'left', 'down']
+        side = []
         # check if all sides are available
-        if x_pos + scale == (x * scale):
-            print('')
+
+        if surface.get_at(x_pos + unit / 2, y_pos) == white and [x_pos, y_pos - unit] not in stack:
+            side.append('upp')
+        if surface.get_at(x_pos + unit, y_pos + 2 * unit) == white and [x_pos + unit,
+                                                                        y_pos] not in stack:
+            side.append('right')
+        if surface.get_at(x_pos + unit / 2, y_pos - unit) == white and [x_pos,
+                                                                        y_pos + unit] not in stack:
+            side.append('down')
+        if surface.get_at(x_pos - unit, y_pos + unit * 2) == white and [x_pos - unit,
+                                                                        y_pos] not in stack:
+            side.append('left')
 
             # if side == 1:
             #    x_pos =+  scale
