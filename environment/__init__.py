@@ -1,31 +1,42 @@
 '''
 Created on 20 Oct 2016
-Modified on __updated__
+
 @author: william
 '''
-from random import randint
+import random
 
 from pygame import display, draw
-import pygame
 
-from environment import grid
+from main import scale, gui
 
 
 def grid(gui, x, y, scale=15, color=(255, 255, 255)):
-    for i in range(x + 1):
+    for i in range(x):
         draw.line(gui, (color), (i * scale, 0), (i * scale, y * scale))
-    for i in range(y + 1):
+    for i in range(y):
         draw.line(gui, (color), (0, i * scale), (x * scale, i * scale))
+    draw.rect(gui, (250, 0, 0), (0, 0, x * scale + 1, y * scale + 1), 1)
 
 
-def create():
-    pygame.init()
-    x_blocks = 50  # int(input('x_blocks: '))
-    y_blocks = 50  # int(input('y_blocks: '))
-    scale = 18
-    gui = display.set_mode([x_blocks * scale + 1, y_blocks * scale + 1])
+def create_grid(x, y, scale):
+    grid(gui, x, y, scale)
 
     while True:  # debug
         # color=(randint(0,255),randint(0,255),randint(0,255))
-        grid.draw(gui, x_blocks, y_blocks, scale)
         display.update()
+
+
+def depth(x, y):
+    blocks = x * y
+    x_pos = random.randint(0, x - 1)
+    y_pos = random.randint(0, y - 1)
+    while blocks is not None:
+        side = ['upp', 'right', 'left', 'down']
+        # check if all sides are available
+        if x_pos + scale == (x * scale):
+            print('')
+
+            # if side == 1:
+            #    x_pos =+  scale
+            #    draw.line(gui, (0,0,0),())
+            # elif side == 2:
