@@ -7,7 +7,7 @@ from main import GUI
 
 def grid(gui, x, y, d=15, color=(255, 255, 255)):
     """
-
+crates a grid
     :param gui:
     :type gui:
     :param x:
@@ -56,3 +56,17 @@ creates maze with depth search algorithm.
         if GUI.get_at(x_pos - d, y_pos + d * 2) == white:
             if [x_pos - d, y_pos] not in stack:
                 side.append('left')
+        side.append('stop')
+        side = side[random.randint(0, (side.index('stop') - 1))]
+        if side == 'upp':
+            pass
+            # go upp
+        if side == 'right':
+            pass
+            # go right
+        if side == 'down':
+            pass
+            # go down
+        if side == 'left':
+            pass
+            # go left
