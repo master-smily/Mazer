@@ -3,20 +3,21 @@ Created on 20 Oct 2016
 
 @author: master_smily
 """
+from distutils.util import strtobool
 from os import environ
 from random import randint
 
 import pygame
-from pygame import display, draw
-from pygame.constants import NOFRAME
+from pygame import display, draw, event
+from pygame.constants import KEYDOWN, K_DOWN, K_LEFT, K_RIGHT, K_UP, NOFRAME
 from pygame.time import Clock
 
+BLACK = (0, 0, 0, 255)
+WHITE = (255, 255, 255, 255)
 
 def grid(x, y, d=30, color=(255, 255, 255, 255)):
     """
 crates a grid
-    :param surface:
-    :type surface:
     :param x:
     :type x:
     :param y:
@@ -34,11 +35,10 @@ crates a grid
     display.update()
 
 
-def depth(x, y, fps=100, d=30):
+def depth(x, y, fps=0, d=30):
     """
 creates maze with depth search algorithm.
     :param fps:
-    :param gui:
     :param d:
     :type d:
     :param x:
@@ -46,26 +46,26 @@ creates maze with depth search algorithm.
     :param y:
     :type y:
     """
-    white = (255, 255, 255, 255)
     stack = []
     x_pos = d * randint(0, x - 1)
     y_pos = d * randint(0, y - 1)
     log = [[x_pos, y_pos]]
     loop = 0
     while True:
+        event.pump()
         loop += 1
         side = []
         # check if all sides are available
-        if gui.get_at((int(x_pos + d / 2), int(y_pos))) == white:
+        if gui.get_at([int(x_pos + d / 2), int(y_pos)]) == WHITE:
             if [x_pos, y_pos - d] not in log:
                 side.append('upp')
-        if gui.get_at((int(x_pos + d), int(y_pos + d / 2))) == white:
+        if gui.get_at((int(x_pos + d), int(y_pos + d / 2))) == WHITE:
             if [x_pos + d, y_pos] not in log:
                 side.append('right')
-        if gui.get_at((int(x_pos + d / 2), int(y_pos + d))) == white:
+        if gui.get_at((int(x_pos + d / 2), int(y_pos + d))) == WHITE:
             if [x_pos, y_pos + d] not in log:
                 side.append('down')
-        if gui.get_at((x_pos, int(y_pos + d / 2))) == white:
+        if gui.get_at((x_pos, int(y_pos + d / 2))) == WHITE:
             if [x_pos - d, y_pos] not in log:
                 side.append('left')
         if side:  # if side: log, stack and erase wall
@@ -94,6 +94,50 @@ creates maze with depth search algorithm.
             break
         display.update()
 
+
+def play(d=30):
+    r = int(d / 3)
+    pos = [r, r]
+    stack = []
+    log = [pos]
+    while True:
+        pygame.event.pump()
+        gui.blit(stage, [0, 0])
+        draw.circle(gui, (10, 10, 200), pos, r)
+        display.update()
+        side = []
+        pos_upp = [pos[0], pos[1] - 1]
+        pos_right = [pos[0] + 1, pos[1]]
+        pos_down = [pos[0], pos[1] + 1]
+        pos_left = [pos[0] - 1, pos[1]]
+
+        if botmode:
+            stack.append(pos)
+            if gui.get_at(pos_upp) == BLACK and pos_upp not in log:
+                side.append('upp')
+            if gui.get_at(pos_right) == BLACK and pos_right not in log:
+                side.append('right')
+            if gui.get_at(pos_down) == BLACK and pos_down not in log:
+                side.append('down')
+            if gui.get_at(pos_left) == BLACK and pos_left not in log:
+                side.append('left')
+            if side:
+                side = side[randint(0, side.index(side[-1]))]
+                if side == 'upp':
+                    pass
+            log.append(pos)
+        else:
+            for event in pygame.event.get(KEYDOWN):
+                if event.key == K_UP and gui.get_at(pos_upp) == BLACK:
+                    pos[1] -= 1
+                if event.key == K_RIGHT and gui.get_at(pos_right) == BLACK:
+                    pos[0] += 1
+                if event.key == K_DOWN and gui.get_at(pos_down) == BLACK:
+                    pos[1] += 1
+                if event.key == K_LEFT and gui.get_at(pos_left) == BLACK:
+                    pos[0] -= 1
+
+
 if __name__ == "__main__":
     environ['SDL_VIDEO_WINDOW_POS'] = '0,0'
     x_blocks = 45  # int(input('x_blocks: '))
@@ -104,5 +148,6 @@ if __name__ == "__main__":
     pygame.init()
     grid(x_blocks, y_blocks)
     depth(x_blocks, y_blocks)
-    while True:
-        pass
+    stage = gui.convert()
+    botmode = strtobool(input('bot mode?'))
+    play()
