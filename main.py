@@ -3,17 +3,17 @@ Created on 20 Oct 2016
 
 @author: master_smily
 """
-from distutils.util import strtobool
 from os import environ
 from random import randint
 
 import pygame
 from pygame import display, draw, event
-from pygame.constants import KEYDOWN, K_DOWN, K_LEFT, K_RIGHT, K_UP, NOFRAME
+from pygame.constants import KEYDOWN, KEYUP, K_DOWN, K_LEFT, K_RIGHT, K_UP, NOFRAME
 from pygame.time import Clock
 
 BLACK = (0, 0, 0, 255)
 WHITE = (255, 255, 255, 255)
+
 
 def grid(x, y, d=30, color=(255, 255, 255, 255)):
     """
@@ -86,7 +86,7 @@ creates maze with depth search algorithm.
                 x_pos -= d
             log.append([x_pos, y_pos])
         elif stack:  # go back one step
-            print((x_pos, y_pos), stack)
+            # print((x_pos, y_pos), stack)
             x_pos = stack[-1][0]
             y_pos = stack[-1][1]
             stack.pop()
@@ -97,51 +97,74 @@ creates maze with depth search algorithm.
 
 def play(d=30):
     r = int(d / 3)
-    pos = [r, r]
-    stack = []
-    log = [pos]
-    while True:
-        pygame.event.pump()
-        gui.blit(stage, [0, 0])
-        draw.circle(gui, (10, 10, 200), pos, r)
-        display.update()
-        side = []
-        pos_upp = [pos[0], pos[1] - 1]
-        pos_right = [pos[0] + 1, pos[1]]
-        pos_down = [pos[0], pos[1] + 1]
-        pos_left = [pos[0] - 1, pos[1]]
-
-        if botmode:
-            stack.append(pos)
-            if gui.get_at(pos_upp) == BLACK and pos_upp not in log:
+    main = Player()
+    if botmode:
+        stack = []
+        log = [main.pos]
+        while True:
+            side = []
+            stack.append(main.pos)
+            if gui.get_at(main.pos_upp) == BLACK and main.pos_upp not in log:
                 side.append('upp')
-            if gui.get_at(pos_right) == BLACK and pos_right not in log:
+            if gui.get_at(main.pos_right) == BLACK and main.pos_right not in log:
                 side.append('right')
-            if gui.get_at(pos_down) == BLACK and pos_down not in log:
+            if gui.get_at(main.pos_down) == BLACK and main.pos_down not in log:
                 side.append('down')
-            if gui.get_at(pos_left) == BLACK and pos_left not in log:
+            if gui.get_at(main.pos_left) == BLACK and main.pos_left not in log:
                 side.append('left')
             if side:
                 side = side[randint(0, side.index(side[-1]))]
                 if side == 'upp':
                     pass
-            log.append(pos)
-        else:
+            log.append(main.pos)
+    else:
+        while True:
             for event in pygame.event.get(KEYDOWN):
-                if event.key == K_UP and gui.get_at(pos_upp) == BLACK:
-                    pos[1] -= 1
-                if event.key == K_RIGHT and gui.get_at(pos_right) == BLACK:
-                    pos[0] += 1
-                if event.key == K_DOWN and gui.get_at(pos_down) == BLACK:
-                    pos[1] += 1
-                if event.key == K_LEFT and gui.get_at(pos_left) == BLACK:
-                    pos[0] -= 1
+                if event.key == K_UP and gui.get_at(main.pos_upp) == BLACK:
+                    main.move('upp')
+                if event.key == K_RIGHT and gui.get_at(main.pos_right) == BLACK:
+                    main.move('right')
+                if event.key == K_DOWN and gui.get_at(main.pos_down) == BLACK:
+                    main.move('down')
+                if event.key == K_LEFT and gui.get_at(main.pos_left) == BLACK:
+                    main.move('left')
+
+
+class Player:
+    r = int(30 / 3)
+
+    def __init__(self):
+        self.pos = [self.r+3, self.r+3]
+        self.pos_upp = [self.pos[0], self.pos[1] - (self.r + 1)]
+        self.pos_right = [self.pos[0] + self.r, self.pos[1]]
+        self.pos_down = [self.pos[0], self.pos[1] + self.r]
+        self.pos_left = [self.pos[0] - (self.r + 1), self.pos[1]]
+
+    def move(self, side=None):
+        while True:
+            self.__init__()
+            gui.blit(stage, [0, 0])
+            draw.circle(gui, (10, 10, 200), self.pos, self.r)
+            display.update()
+            pygame.event.pump()
+            Clock().tick(50)
+            if side == 'upp' and gui.get_at(self.pos_upp):
+                self.pos[1] -= 1
+            if side == 'right' and gui.get_at(self.pos_right):
+                self.pos[0] += 1
+            if side == 'down' and gui.get_at(self.pos_down):
+                self.pos[1] += 1
+            if side == 'left' and gui.get_at(self.pos_left):
+                self.pos[0] -= 1
+            if event.peek(KEYUP) or side is None:
+                event.clear()
+                break
 
 
 if __name__ == "__main__":
     environ['SDL_VIDEO_WINDOW_POS'] = '0,0'
-    x_blocks = 45  # int(input('x_blocks: '))
-    y_blocks = 24  # int(input('y_blocks: '))
+    x_blocks = 20  # int(input('x_blocks: '))
+    y_blocks = 20  # int(input('y_blocks: '))
     length = 30
     gui = display.set_mode([x_blocks * length + 1, y_blocks * length + 1], NOFRAME)
 
@@ -149,5 +172,8 @@ if __name__ == "__main__":
     grid(x_blocks, y_blocks)
     depth(x_blocks, y_blocks)
     stage = gui.convert()
-    botmode = strtobool(input('bot mode?'))
+    # botmode = strtobool(input('bot mode?'))
+    botmode=0
     play()
+    while True:
+        pass
