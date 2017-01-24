@@ -3,177 +3,161 @@ Created on 20 Oct 2016
 
 @author: master_smily
 """
-from os import environ
+from _csv import writer
+from os import environ, name, system
 from random import randint
 
 import pygame
 from pygame import display, draw, event
-from pygame.constants import KEYDOWN, KEYUP, K_DOWN, K_LEFT, K_RIGHT, K_UP, NOFRAME
-from pygame.time import Clock
+from pygame.time import Clock, get_ticks
 
+BLUE = (10, 10, 200)
+RED = (250, 0, 0)
 BLACK = (0, 0, 0, 255)
 WHITE = (255, 255, 255, 255)
+X = int(25)  # int(input('x_blocks: '))
+Y = int(20)  # int(input('y_blocks: '))
+D = int(30)
+R = int(D / 3)
 
 
-def grid(x, y, d=30, color=(255, 255, 255, 255)):
-    """
-crates a grid
-    :param x:
-    :type x:
-    :param y:
-    :type y:
-    :param d:
-    :type d:
-    :param color:
-    :type color:
-    """
-    for i in range(x):
-        draw.line(gui, color, (i * d, 0), (i * d, y * d), 2)
-    for i in range(y):
-        draw.line(gui, color, (0, i * d), (x * d, i * d), 2)
-    draw.rect(gui, (250, 0, 0), (0, 0, x * d + 1, y * d + 1), 2)
-    display.update()
+class Agent:
+    def __init__(self):
+        self.pos = {'x': int(D / 2),
+                    'y': int(D / 2)}
+        self.no_pos = {'wall': [0, 0],
+                       'cord': [0, 0]}
+        self.log = list()
+        self.stack = list()
+        self.fps = 250
+        self.update()
+        self.pos_upp = dict()
+        self.pos_right = dict()
+        self.pos_down = dict()
+        self.pos_left = dict()
 
-
-def depth(x, y, fps=0, d=30):
-    """
-creates maze with depth search algorithm.
-    :param fps:
-    :param d:
-    :type d:
-    :param x:
-    :type x:
-    :param y:
-    :type y:
-    """
-    stack = []
-    x_pos = d * randint(0, x - 1)
-    y_pos = d * randint(0, y - 1)
-    log = [[x_pos, y_pos]]
-    loop = 0
-    while True:
-        event.pump()
-        loop += 1
-        side = []
-        # check if all sides are available
-        if gui.get_at([int(x_pos + d / 2), int(y_pos)]) == WHITE:
-            if [x_pos, y_pos - d] not in log:
-                side.append('upp')
-        if gui.get_at((int(x_pos + d), int(y_pos + d / 2))) == WHITE:
-            if [x_pos + d, y_pos] not in log:
-                side.append('right')
-        if gui.get_at((int(x_pos + d / 2), int(y_pos + d))) == WHITE:
-            if [x_pos, y_pos + d] not in log:
-                side.append('down')
-        if gui.get_at((x_pos, int(y_pos + d / 2))) == WHITE:
-            if [x_pos - d, y_pos] not in log:
-                side.append('left')
-        if side:  # if side: log, stack and erase wall
-            Clock().tick(fps)
-            side = side[randint(0, side.index(side[-1]))]
-            stack.append([x_pos, y_pos])
-            if side == 'upp':
-                draw.line(gui, (0, 0, 0), (x_pos, y_pos), (x_pos + d, y_pos), 2)
-                y_pos -= d
-            elif side == 'right':
-                draw.line(gui, (0, 0, 0), (x_pos + d, y_pos), (x_pos + d, y_pos + d), 2)
-                x_pos += d
-            elif side == 'down':
-                draw.line(gui, (0, 0, 0), (x_pos, y_pos + d), (x_pos + d, y_pos + d), 2)
-                y_pos += d
-            elif side == 'left':
-                draw.line(gui, (0, 0, 0), (x_pos, y_pos), (x_pos, y_pos + d), 2)
-                x_pos -= d
-            log.append([x_pos, y_pos])
-        elif stack:  # go back one step
-            # print((x_pos, y_pos), stack)
-            x_pos = stack[-1][0]
-            y_pos = stack[-1][1]
-            stack.pop()
+    def sides(self):
+        if self.pos['x'] <= D:
+            self.pos_left = self.no_pos
         else:
-            break
+            self.pos_left = {'wall': [int(self.pos['x'] - D / 2), self.pos['y']],
+                             'cord': [int(self.pos['x'] - D), self.pos['y']]}
+        if self.pos['y'] <= D:
+            self.pos_upp = self.no_pos
+        else:
+            self.pos_upp = {'wall': [self.pos['x'], int(self.pos['y'] - D / 2)],
+                            'cord': [self.pos['x'], int(self.pos['y'] - D)]}
+        if self.pos['x'] >= D * X:
+            self.pos_right = self.no_pos
+        else:
+            self.pos_right = {'wall': [int(self.pos['x'] + D / 2), self.pos['y']],
+                              'cord': [int(self.pos['x'] + D), self.pos['y']]}
+        if self.pos['y'] >= D * Y:
+            self.pos_down = self.no_pos
+        else:
+            self.pos_down = {'wall': [self.pos['x'], int(self.pos['y'] + D / 2)],
+                             'cord': [self.pos['x'], int(self.pos['y'] + D)]}
+
+    def move(self, side=None, boost=False):
+        step = 15
+        for i in range(int(D / step)):
+            if side == 'upp':
+                self.pos['y'] -= step
+            if side == 'right':
+                self.pos['x'] += step
+            if side == 'down':
+                self.pos['y'] += step
+            if side == 'left':
+                self.pos['x'] -= step
+            self.update(boost)
+
+    def update(self, boost=False):
+        if boost:
+            Clock().tick(self.fps * 2)
+        else:
+            Clock().tick(self.fps)
+        Env.gui.blit(stage, [0, 0])
+        draw.circle(Env.gui, BLUE, [self.pos['x'], self.pos['y']], R)
         display.update()
 
-
-def play(d=30):
-    r = int(d / 3)
-    main = Player()
-    if botmode:
-        stack = []
-        log = [main.pos]
+    def bot(self):
+        print('Agent.bot')
         while True:
-            side = []
-            stack.append(main.pos)
-            if gui.get_at(main.pos_upp) == BLACK and main.pos_upp not in log:
-                side.append('upp')
-            if gui.get_at(main.pos_right) == BLACK and main.pos_right not in log:
-                side.append('right')
-            if gui.get_at(main.pos_down) == BLACK and main.pos_down not in log:
-                side.append('down')
-            if gui.get_at(main.pos_left) == BLACK and main.pos_left not in log:
-                side.append('left')
-            if side:
-                side = side[randint(0, side.index(side[-1]))]
-                if side == 'upp':
-                    pass
-            log.append(main.pos)
-    else:
-        while True:
-            for event in pygame.event.get(KEYDOWN):
-                if event.key == K_UP and gui.get_at(main.pos_upp) == BLACK:
-                    main.move('upp')
-                if event.key == K_RIGHT and gui.get_at(main.pos_right) == BLACK:
-                    main.move('right')
-                if event.key == K_DOWN and gui.get_at(main.pos_down) == BLACK:
-                    main.move('down')
-                if event.key == K_LEFT and gui.get_at(main.pos_left) == BLACK:
-                    main.move('left')
-
-
-class Player:
-    r = int(30 / 3)
-
-    def __init__(self):
-        self.pos = [self.r+3, self.r+3]
-        self.pos_upp = [self.pos[0], self.pos[1] - (self.r + 1)]
-        self.pos_right = [self.pos[0] + self.r, self.pos[1]]
-        self.pos_down = [self.pos[0], self.pos[1] + self.r]
-        self.pos_left = [self.pos[0] - (self.r + 1), self.pos[1]]
-
-    def move(self, side=None):
-        while True:
-            self.__init__()
-            gui.blit(stage, [0, 0])
-            draw.circle(gui, (10, 10, 200), self.pos, self.r)
-            display.update()
-            pygame.event.pump()
-            Clock().tick(50)
-            if side == 'upp' and gui.get_at(self.pos_upp):
-                self.pos[1] -= 1
-            if side == 'right' and gui.get_at(self.pos_right):
-                self.pos[0] += 1
-            if side == 'down' and gui.get_at(self.pos_down):
-                self.pos[1] += 1
-            if side == 'left' and gui.get_at(self.pos_left):
-                self.pos[0] -= 1
-            if event.peek(KEYUP) or side is None:
-                event.clear()
+            side = self.side()
+            if self.pos == {'x': X * D - D / 2, 'y': Y * D - D / 2}:
+                print("bot done")
                 break
+            elif side:
+                side = side[randint(0, side.index(side[-1]))]
+                self.stack.append(side)
+                self.move(side)
+                self.log.append([self.pos['x'], self.pos['y']])
+            elif self.stack:
+                self.move(self.reverse_side(), True)
+                self.stack.pop()
+            else:
+                raise Exception
+        return "Depth solved"
+
+    def side(self):
+        # print('Agent.side')
+        self.sides()
+        side = []
+        if Env.gui.get_at(self.pos_upp['wall']) == BLACK \
+                and self.pos_upp['cord'] not in self.log:
+            side.append('upp')
+        if Env.gui.get_at(self.pos_right['wall']) == BLACK \
+                and self.pos_right['cord'] not in self.log:
+            side.append('right')
+        if Env.gui.get_at(self.pos_down['wall']) == BLACK \
+                and self.pos_down['cord'] not in self.log:
+            side.append('down')
+        if Env.gui.get_at(self.pos_left['wall']) == BLACK \
+                and self.pos_left['cord'] not in self.log:
+            side.append('left')
+        return side
+
+    def reverse_side(self):
+        if self.stack[-1] == 'upp':
+            return 'down'
+        if self.stack[-1] == 'down':
+            return 'upp'
+        if self.stack[-1] == 'right':
+            return 'left'
+        if self.stack[-1] == 'left':
+            return 'right'
+
+
+def console_clear():
+    system('cls' if name == 'nt' else 'clear')
 
 
 if __name__ == "__main__":
-    environ['SDL_VIDEO_WINDOW_POS'] = '0,0'
-    x_blocks = 20  # int(input('x_blocks: '))
-    y_blocks = 20  # int(input('y_blocks: '))
-    length = 30
-    gui = display.set_mode([x_blocks * length + 1, y_blocks * length + 1], NOFRAME)
+    from Environment import Environment
 
-    pygame.init()
-    grid(x_blocks, y_blocks)
-    depth(x_blocks, y_blocks)
-    stage = gui.convert()
-    # botmode = strtobool(input('bot mode?'))
-    botmode=0
-    play()
+    print('everything declared')
+    environ['SDL_VIDEO_WINDOW_POS'] = '0,0'
+    ev = []
+    # loop = strtobool(input("loop?"))
     while True:
-        pass
+        pygame.init()
+        Env = Environment()
+
+        Env.grid()
+        c_method = Env.depth()
+        stage = Env.gui.convert()
+        Agent = Agent()
+        solve_start = get_ticks()
+        s_method = Agent.bot()
+        solve_end = get_ticks()
+        ev.append(event.get())
+        with open("stats.csv", 'w') as csvfile:
+            writer(csvfile).writerow([c_method, s_method, solve_end - solve_start, solve_end])
+        # raise Exception
+        # if not loop:
+        #     pygame.quit()
+        #     break
+        # else:
+        #     quit()
+        pygame.quit()
+        print('\n\n\n\n')
