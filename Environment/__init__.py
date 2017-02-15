@@ -10,7 +10,8 @@ from main import BLUE, D, RED, WHITE, X, Y
 class Environment:
     def __init__(self):
         self.gui = display.set_mode([X * D + 1, Y * D + 1], NOFRAME)
-        draw.rect(self.gui, BLUE, ((0, 0), (D, D)), 2)
+        draw.rect(self.gui, BLUE, ((1, 1), (D - 1, D - 1)), 5)
+        self.grid()
 
     def grid(self):
         """
