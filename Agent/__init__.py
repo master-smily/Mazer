@@ -118,11 +118,13 @@ class Agent:
             return 'right'
 
     def evaluate_node(self, cell):
-        x, y = self.calc_cord(cell)
+        self.calc_cord(cell)
         sides = self.side()
         for i in range(len(sides)):
+            self.calc_cord(cell)
             self.move(sides[i], True, D)
             self.child_nodes.add((self.pos['x'], self.pos['y']))
+            self.log.append([self.pos['x'], self.pos['y']])
 
     def breadth(self):
         goal = (X * D - D / 2, Y * D - D / 2)
@@ -145,4 +147,3 @@ class Agent:
     def calc_cord(self, cell):
         self.pos['x'] = cell[0]
         self.pos['y'] = cell[1]
-        return self.pos['x'], self.pos['y']
