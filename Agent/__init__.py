@@ -80,10 +80,10 @@ class Agent:
             elif side:
                 side = side[randint(0, side.index(side[-1]))]
                 self.stack.append(side)
-                self.move(side)
+                self.move(side, True, D)
                 self.log.append([self.pos['x'], self.pos['y']])
             elif self.stack:
-                self.move(self.reverse_side(), True)
+                self.move(self.reverse_side(), True, D)
                 self.stack.pop()
             else:
                 raise Exception
