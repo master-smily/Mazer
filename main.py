@@ -5,6 +5,7 @@ Created on 20 Oct 2016
 """
 from _csv import writer
 from os import environ, name, system
+from random import choice
 
 import pygame
 from pygame import event
@@ -23,6 +24,16 @@ R = int(D / 3)
 def console_clear():
     system('cls' if name == 'nt' else 'clear')
 
+
+def solve_method():
+    if s_method == "Depth solved":
+        return Agent.depth()
+    elif s_method == "Breadth solved":
+        return Agent.breadth()
+    else:
+        return choice([Agent.depth(), Agent.breadth()])
+
+
 if __name__ == "__main__":
     from Environment import Environment
     from Agent import Agent as Ai
@@ -39,8 +50,8 @@ if __name__ == "__main__":
         Agent = Ai(Env.gui)
         Env.gui = Agent.gui
         solve_start = get_ticks()
-        # s_method = Agent.depth()
-        s_method = Agent.breadth()
+        s_method = solve_method()
+        # s_method =
         solve_end = get_ticks()
         ev.append(event.get())
         with open("stats.csv", 'w') as csvfile:
@@ -52,5 +63,5 @@ if __name__ == "__main__":
         # else:
         #     quit()
         pygame.quit()
-        print('\n\n\n\n')
-        break  # debug no loop
+        print('\n\n\n')
+        # break  # debug no loop
