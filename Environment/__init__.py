@@ -1,7 +1,6 @@
 from random import randint
 
 from pygame import display, draw, event
-from pygame.constants import NOFRAME
 from pygame.time import Clock
 
 from main import BLUE, D, RED, WHITE, X, Y
@@ -9,7 +8,7 @@ from main import BLUE, D, RED, WHITE, X, Y
 
 class Environment:
     def __init__(self):
-        self.gui = display.set_mode([X * D + 1, Y * D + 1], NOFRAME)
+        self.gui = display.set_mode([X * D + 1, Y * D + 1])
         draw.rect(self.gui, BLUE, ((1, 1), (D - 1, D - 1)), 5)
         self.grid()
 

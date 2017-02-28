@@ -4,7 +4,7 @@ Created on 20 Oct 2016
 @author: master_smily
 """
 from _csv import writer
-from os import environ, name, system
+from os import name, system
 from random import choice
 
 import pygame
@@ -21,17 +21,22 @@ D = int(30)
 R = int(D / 3)
 
 
+class SolveMethod:
+    type = choice(["Depth solved", "Breadth solved"])
+
+    def __call__(self):
+        if self.type == "Depth solved":
+            print('SolveMethod: self.method == "Depth solved"')
+            return Agent.breadth()
+        elif self.type == "Breadth solved":
+            print('SolveMethod: self.method == "Breadth solved"')
+            return Agent.depth()
+        else:
+            raise Exception("SolveMethod Error")
+
+
 def console_clear():
     system('cls' if name == 'nt' else 'clear')
-
-
-def solve_method():
-    if s_method == "Depth solved":
-        return Agent.depth()
-    elif s_method == "Breadth solved":
-        return Agent.breadth()
-    else:
-        return choice([Agent.depth(), Agent.breadth()])
 
 
 if __name__ == "__main__":
@@ -39,9 +44,9 @@ if __name__ == "__main__":
     from Agent import Agent as Ai
 
     print('everything declared')
-    environ['SDL_VIDEO_WINDOW_POS'] = '0,0'
     ev = []
     # loop = strtobool(input("loop?"))
+    SolveMethod = SolveMethod()
     while True:
         pygame.init()
         Env = Environment()
@@ -50,18 +55,13 @@ if __name__ == "__main__":
         Agent = Ai(Env.gui)
         Env.gui = Agent.gui
         solve_start = get_ticks()
-        s_method = solve_method()
+        SolveMethod.type = SolveMethod()
         # s_method =
         solve_end = get_ticks()
         ev.append(event.get())
-        with open("stats.csv", 'w') as csvfile:
-            writer(csvfile).writerow([c_method, s_method, solve_end - solve_start, solve_end])
-        # raise Exception
-        # if not loop:
-        #     pygame.quit()
-        #     break
-        # else:
-        #     quit()
+        with open("stats.csv", 'a') as csvfile:
+            writer(csvfile).writerow([c_method, SolveMethod.type, solve_end - solve_start])
+
         pygame.quit()
-        print('\n\n\n')
+        print('\n')
         # break  # debug no loop

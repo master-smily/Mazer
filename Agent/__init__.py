@@ -14,7 +14,7 @@ class Agent:
                        'cord': [0, 0]}
         self.log = []
         self.stack = []
-        self.fps = 250
+        self.fps = 100
         self.pos_upp = dict()
         self.pos_right = dict()
         self.pos_down = dict()
@@ -49,7 +49,7 @@ class Agent:
             self.pos_down = {'wall': [self.pos['x'], int(self.pos['y'] + D / 2)],
                              'cord': [self.pos['x'], int(self.pos['y'] + D)]}
 
-    def move(self, side=None, boost=False, step=15):
+    def move(self, side=None, step=15):
         for i in range(int(D / step)):
             if side == 'upp':
                 self.pos['y'] -= step
@@ -59,34 +59,31 @@ class Agent:
                 self.pos['y'] += step
             if side == 'left':
                 self.pos['x'] -= step
-            self.update(boost)
+            self.update()
 
-    def update(self, boost=False):
-        if boost:
-            Clock().tick(self.fps * 3)
-        else:
-            Clock().tick(self.fps)
+    def update(self):
+        Clock().tick(self.fps)
         self.gui.blit(self.stage, [0, 0])
         draw.circle(self.gui, BLUE, [self.pos['x'], self.pos['y']], R)
         display.update()
 
     def depth(self):
-        print('Agent.bot')
+        print('Agent.depth')
         while True:
             side = self.side()
             if self.pos == {'x': X * D - D / 2, 'y': Y * D - D / 2}:
-                print("bot done")
+                print("Depth done")
                 break
             elif side:
                 side = side[randint(0, side.index(side[-1]))]
                 self.stack.append(side)
-                self.move(side, True, D)
+                self.move(side, D)
                 self.log.append([self.pos['x'], self.pos['y']])
             elif self.stack:
-                self.move(self.reverse_side(), True, D)
+                self.move(self.reverse_side(), D)
                 self.stack.pop()
             else:
-                raise Exception
+                raise Exception("Depth Error")
         return "Depth solved"
 
     def side(self):
@@ -122,11 +119,12 @@ class Agent:
         sides = self.side()
         for i in range(len(sides)):
             self.calc_cord(cell)
-            self.move(sides[i], True, D)
+            self.move(sides[i], D)
             self.child_nodes.add((self.pos['x'], self.pos['y']))
             self.log.append([self.pos['x'], self.pos['y']])
 
     def breadth(self):
+        print("Agent.breadth")
         goal = (X * D - D / 2, Y * D - D / 2)
         while True:
             if goal in self.child_nodes or goal in self.parent_nodes:
@@ -140,8 +138,7 @@ class Agent:
                 self.parent_nodes = self.child_nodes
                 self.child_nodes = set()
             else:
-                print("Error")
-                raise Exception
+                raise Exception("Breadth Error")
         return "Breadth solved"
 
     def calc_cord(self, cell):
