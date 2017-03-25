@@ -1,7 +1,8 @@
-from random import randint, sample
+from math import hypot
 
-from pygame import display, draw
+from pygame import display, draw, event
 from pygame.time import Clock
+from random import randint, sample
 
 from main import BLACK, BLUE, D, R, X, Y
 
@@ -65,6 +66,7 @@ class Agent:
         Clock().tick(self.fps)
         self.gui.blit(self.stage, [0, 0])
         draw.circle(self.gui, BLUE, [self.pos['x'], self.pos['y']], R)
+        event.pump()
         display.update()
 
     def depth(self):
@@ -144,3 +146,37 @@ class Agent:
     def calc_cord(self, cell):
         self.pos['x'] = cell[0]
         self.pos['y'] = cell[1]
+
+    def a_star(self):
+        start = (self.pos['x'], self.pos['y'])
+        goal = (X * D - D / 2, Y * D - D / 2)
+
+        closed_nodes = set()
+        open_nodes = {start}
+        came_from = []
+
+        g_score = {start: 0}
+        f_score = {start: self.heuristic(start, goal)}
+
+        while open_nodes:
+            current = self.lowest(open_nodes, f_score)
+            if current == goal:
+                print("A* done")
+                break
+
+            open_nodes.remove(current)
+            closed_nodes.add(current)
+            self.side()
+        raise Exception("A* Error")
+
+    @staticmethod
+    def heuristic(node, goal):
+        hypot(goal[0] - node[0], goal[1] - node[1])
+
+    def lowest(self, nodes, f_score):
+        active = min(f_score)
+        if active in nodes:
+            return active
+        else:
+            del f_score[active]
+            return self.lowest(nodes, f_score)
