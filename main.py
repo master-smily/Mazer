@@ -4,12 +4,12 @@ Created on 20 Oct 2016
 @author: master_smily
 """
 from _csv import writer
-from os import name, system
-from random import choice
 
 import pygame
+from os import name, system
 from pygame import event
 from pygame.time import get_ticks
+from random import choice
 
 BLUE = (10, 10, 200)
 RED = (250, 0, 0)
@@ -47,6 +47,7 @@ if __name__ == "__main__":
     ev = []
     # loop = strtobool(input("loop?"))
     SolveMethod = SolveMethod()
+
     while True:
         pygame.init()
         Env = Environment()
