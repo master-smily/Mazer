@@ -1,8 +1,8 @@
-from math import hypot
+from math import sqrt
+from random import choice, randint, sample
 
 from pygame import display, draw, event
 from pygame.time import Clock
-from random import randint, sample
 
 from main import BLACK, BLUE, D, R, X, Y
 
@@ -91,20 +91,20 @@ class Agent:
     def side(self):
         # print('Agent.side')
         self.neighbours()
-        side = []
+        sides = []
         if self.gui.get_at(self.pos_upp['wall']) == BLACK \
                 and self.pos_upp['cord'] not in self.log:
-            side.append('upp')
+            sides.append('upp')
         if self.gui.get_at(self.pos_right['wall']) == BLACK \
                 and self.pos_right['cord'] not in self.log:
-            side.append('right')
+            sides.append('right')
         if self.gui.get_at(self.pos_down['wall']) == BLACK \
                 and self.pos_down['cord'] not in self.log:
-            side.append('down')
+            sides.append('down')
         if self.gui.get_at(self.pos_left['wall']) == BLACK \
                 and self.pos_left['cord'] not in self.log:
-            side.append('left')
-        return side
+            sides.append('left')
+        return sides
 
     def reverse_side(self):
         if self.stack[-1] == 'upp':
@@ -149,34 +149,45 @@ class Agent:
 
     def a_star(self):
         start = (self.pos['x'], self.pos['y'])
-        goal = (X * D - D / 2, Y * D - D / 2)
+        end = (X * D - D / 2, Y * D - D / 2)
+        open_set = Stack()
+        closed_set = []
+        open_set.__add__(start, 0, self.heuristic(start, end))
 
-        closed_nodes = set()
-        open_nodes = {start}
-        came_from = []
-
-        g_score = {start: 0}
-        f_score = {start: self.heuristic(start, goal)}
-
-        while open_nodes:
-            current = self.lowest(open_nodes, f_score)
-            if current == goal:
+        while open_set:
+            active = open_set.lowest_f()
+            self.calc_cord(active)
+            if active == end:
                 print("A* done")
-                break
-
-            open_nodes.remove(current)
-            closed_nodes.add(current)
-            self.side()
-        raise Exception("A* Error")
+                return "A* solved"
+            open_set.remove(active)
+            closed_set.append(active)
+            sides = self.side()
+            while sides:
+                next_cell = choice(sides)
 
     @staticmethod
-    def heuristic(node, goal):
-        hypot(goal[0] - node[0], goal[1] - node[1])
+    def heuristic(a, b):
+        x_dist = b[0] - a[0]
+        y_dist = b[1] - a[1]
+        return sqrt(x_dist**2 + y_dist**2)
 
-    def lowest(self, nodes, f_score):
-        active = min(f_score)
-        if active in nodes:
-            return active
+
+class Stack:
+    def __init__(self):
+        self.stack = dict()
+
+    def __add__(self, cell, g=float("inf"), h=float("inf")):
+        self.stack[cell] = {'g': g, 'h': h, 'f': g + h}
+
+    def __bool__(self):
+        if self.stack:
+            return True
         else:
-            del f_score[active]
-            return self.lowest(nodes, f_score)
+            return False
+
+    def lowest_f(self):
+        return min(self.stack.keys(), key=lambda key: self.stack[key]['f'])
+
+    def remove(self, cell):
+        return self.stack.pop(cell)
