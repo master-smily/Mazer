@@ -9,6 +9,7 @@ from main import BLACK, BLUE, D, R, X, Y
 
 class Agent:
     def __init__(self, gui):
+        self.end = (X * D - D / 2, Y * D - D / 2)
         self.pos = {'x': int(D / 2),
                     'y': int(D / 2)}
         self.no_pos = {'wall': [0, 0],
@@ -61,6 +62,7 @@ class Agent:
             if side == 'left':
                 self.pos['x'] -= step
             self.update()
+        return self.pos['x'], self.pos['y']
 
     def update(self):
         Clock().tick(self.fps)
@@ -127,9 +129,8 @@ class Agent:
 
     def breadth(self):
         print("Agent.breadth")
-        goal = (X * D - D / 2, Y * D - D / 2)
         while True:
-            if goal in self.child_nodes or goal in self.parent_nodes:
+            if self.end in self.child_nodes or self.end in self.parent_nodes:
                 print("breadth done")
                 break
             elif self.parent_nodes:  # explore the current list
@@ -147,29 +148,37 @@ class Agent:
         self.pos['x'] = cell[0]
         self.pos['y'] = cell[1]
 
-    def a_star(self):
+    def a_star(self):  # https://en.wikipedia.org/wiki/A*_search_algorithm#Pseudocode
         start = (self.pos['x'], self.pos['y'])
-        end = (X * D - D / 2, Y * D - D / 2)
         open_set = Stack()
         closed_set = []
-        open_set.__add__(start, 0, self.heuristic(start, end))
+        # last = open_set.read(start)
+        open_set.add(start, 0, self.heuristic(start))
 
         while open_set:
             active = open_set.lowest_f()
-            self.calc_cord(active)
-            if active == end:
+            if active == self.end:
                 print("A* done")
                 return "A* solved"
-            open_set.remove(active)
-            closed_set.append(active)
+            self.calc_cord(active)
             sides = self.side()
+            closed_set.append(active)
             while sides:
+                self.calc_cord(active)
                 next_cell = choice(sides)
+                sides.remove(next_cell)
+                next_cell = self.move(next_cell, D)
+                if next_cell in closed_set:
+                    continue
+                new_g = open_set.read(active)['g'] + 15
+                if next_cell not in open_set:
+                    open_set.add(next_cell, new_g, self.heuristic(next_cell))
+            open_set.remove(active)
+        raise Exception("A* Error")
 
-    @staticmethod
-    def heuristic(a, b):
-        x_dist = b[0] - a[0]
-        y_dist = b[1] - a[1]
+    def heuristic(self, pos):
+        x_dist = self.end[0] - pos[0]
+        y_dist = self.end[1] - pos[1]
         return sqrt(x_dist**2 + y_dist**2)
 
 
@@ -177,7 +186,7 @@ class Stack:
     def __init__(self):
         self.stack = dict()
 
-    def __add__(self, cell, g=float("inf"), h=float("inf")):
+    def add(self, cell, g=float("inf"), h=float("inf")):
         self.stack[cell] = {'g': g, 'h': h, 'f': g + h}
 
     def __bool__(self):
@@ -186,8 +195,18 @@ class Stack:
         else:
             return False
 
-    def lowest_f(self):
-        return min(self.stack.keys(), key=lambda key: self.stack[key]['f'])
+    def lowest_f(self) -> tuple:
+        f = min(self.stack.keys(), key=lambda key: self.stack[key]['f'])
+        return tuple(f)
 
     def remove(self, cell):
         return self.stack.pop(cell)
+
+    def read(self, cell):
+        return self.stack[cell]
+
+    def __contains__(self, item):
+        if item in self.stack:
+            return True
+        else:
+            return False
