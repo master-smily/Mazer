@@ -3,36 +3,63 @@ Created on 20 Oct 2016
 
 @author: master_smily
 """
-from _csv import writer
+import csv
 from os import name, system
 from random import choice
 
 import pygame
 from pygame import event
+from pygame.constants import QUIT
 from pygame.time import get_ticks
 
-BLUE = (10, 10, 200)
+BLUE = (10, 10, 200, 50)
 RED = (250, 0, 0)
 BLACK = (0, 0, 0, 255)
 WHITE = (255, 255, 255, 255)
-X = int(25)  # int(input('x_blocks: '))
-Y = int(20)  # int(input('y_blocks: '))
-D = int(30)
+X = int(66)  # 66
+Y = int(34)  # 34
+D = int(20)  # 20
 R = int(D / 3)
 
 
 class SolveMethod:
-    type = choice(["Depth solved", "Breadth solved"])
+    stack = []
+    done = False
+    stage = None
 
-    def __call__(self, run=None):
-        if self.type == "Depth solved":
-            print('SolveMethod: self.method == "Depth solved"')
-            return Agent.breadth()
-        elif self.type == "Breadth solved":
-            print('SolveMethod: self.method == "Breadth solved"')
-            return Agent.depth()
+    def __call__(self):
+        Agent.gui = Env.gui
+        Agent.stage = Env.stage
+        if self.stack:
+            solve = self.stack.pop()
+            if solve == "Depth":
+                solve = Agent.breadth()
+            elif solve == "Breadth":
+                solve = Agent.depth()
+            elif solve == "A*":
+                solve = Agent.a_star()
+            elif solve == "A* g/2":
+                solve = Agent.a_star(0.5) + " g/2"
+            elif solve == "A* g/4":
+                solve = Agent.a_star(0.25) + " g/4"
+            elif solve == "A* no_g":
+                solve = Agent.a_star(0) + " g(n)=0"
+            else:
+                raise Exception("SolveMethod Error")
         else:
-            raise Exception("SolveMethod Error")
+            self.new_stack()
+            return self.__call__()
+        # Env.gui
+        return solve
+
+    def new_stack(self):
+        base_stack = ["Depth", "Breadth", "A*", "A* g/4", "A* g/2", "A* no_g"]
+        while base_stack:
+            next_item = choice(base_stack)
+            base_stack.remove(next_item)
+            self.stack.append(next_item)
+        Env.stage = None
+        Env.depth()
 
 
 def console_clear():
@@ -47,22 +74,22 @@ if __name__ == "__main__":
     ev = []
     # loop = strtobool(input("loop?"))
     SolveMethod = SolveMethod()
+    done = False
+    stage = None
+    pygame.init()
+    Env = Environment()
 
-    while True:
-        pygame.init()
-        Env = Environment()
-
-        c_method = Env.depth()
-        Agent = Ai(Env.gui)
-        Env.gui = Agent.gui
+    while not done:
+        Agent = Ai()
         solve_start = get_ticks()
-        SolveMethod.type = SolveMethod()
-        # s_method =
+        s_method = SolveMethod()
         solve_end = get_ticks()
-        ev.append(event.get())
-        with open("stats.csv", 'a') as csvfile:
-            writer(csvfile).writerow([c_method, SolveMethod.type, solve_end - solve_start])
-
-        pygame.quit()
-        print('\n')
+        SolveMethod.gui = Agent.gui
+        if s_method is not None:
+            with open("stats.csv", 'a', newline='') as csvfile:
+                stats = csv.writer(csvfile)
+                stats.writerow([s_method, solve_end - solve_start])
+        if event.peek(QUIT):
+            done = True
         # break  # debug no loop
+    pygame.quit()

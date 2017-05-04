@@ -1,123 +1,4501 @@
-Create Method,Solve Method,Duration
-Depth create,Breadth solved,5411
-Depth create,Breadth solved,6613
-Depth create,Breadth solved,6842
-Depth create,Breadth solved,4693
-Depth create,Breadth solved,4818
-Depth create,Breadth solved,5985
-Depth create,Breadth solved,5235
-Depth create,Breadth solved,5882
-Depth create,Breadth solved,6115
-Depth create,Breadth solved,6423
-Depth create,Breadth solved,5283
-Depth create,Depth solved,2191
-Depth create,Depth solved,5667
-Depth create,Depth solved,2531
-Depth create,Depth solved,1333
-Depth create,Depth solved,2523
-Depth create,Depth solved,6491
-Depth create,Depth solved,11198
-Depth create,Depth solved,8163
-Depth create,Depth solved,10742
-Depth create,Depth solved,9124
-Depth create,Depth solved,8163
-Depth create,Depth solved,3643
-Depth create,Breadth solved,4047
-Depth create,Breadth solved,3572
-Depth create,Breadth solved,3804
-Depth create,Breadth solved,6446
-Depth create,Breadth solved,4517
-Depth create,Breadth solved,6102
-Depth create,Depth solved,4637
-Depth create,Depth solved,8217
-Depth create,Breadth solved,4503
-Depth create,Breadth solved,5312
-Depth create,Breadth solved,5138
-Depth create,Breadth solved,6525
-Depth create,Breadth solved,6000
-Depth create,Breadth solved,6662
-Depth create,Breadth solved,3598
-Depth create,Depth solved,7474
-Depth create,Breadth solved,4941
-Depth create,Depth solved,3808
-Depth create,Breadth solved,2732
-Depth create,Depth solved,3861
-Depth create,Breadth solved,5155
-Depth create,Depth solved,9498
-Depth create,Breadth solved,3636
-Depth create,Depth solved,5298
-Depth create,Breadth solved,3416
-Depth create,Depth solved,2102
-Depth create,Breadth solved,5253
-Depth create,Depth solved,7253
-Depth create,Breadth solved,4432
-Depth create,Depth solved,4440
-Depth create,Breadth solved,3915
-Depth create,Depth solved,1611
-Depth create,Depth solved,8904
-Depth create,Breadth solved,6375
-Depth create,Depth solved,8159
-Depth create,Breadth solved,5742
-Depth create,Depth solved,7631
-Depth create,Breadth solved,3224
-Depth create,Depth solved,10438
-Depth create,Breadth solved,3797
-Depth create,Depth solved,4034
-Depth create,Breadth solved,5867
-Depth create,Depth solved,3208
-Depth create,Breadth solved,4861
-Depth create,Depth solved,10862
-Depth create,Breadth solved,3153
-Depth create,Depth solved,9157
-Depth create,Breadth solved,4670
-Depth create,Depth solved,5088
-Depth create,Breadth solved,5627
-Depth create,Depth solved,4259
-Depth create,Breadth solved,6577
-Depth create,Breadth solved,1807
-Depth create,Depth solved,4623
-Depth create,Breadth solved,1731
-Depth create,Depth solved,4177
-Depth create,Breadth solved,3429
-Depth create,Depth solved,4880
-Depth create,Breadth solved,4310
-Depth create,Depth solved,7350
-Depth create,Breadth solved,5060
-Depth create,Depth solved,8855
-Depth create,Breadth solved,3787
-Depth create,Depth solved,6494
-Depth create,Breadth solved,7937
-Depth create,Depth solved,9279
-Depth create,,555
-Depth create,,247
-Depth create,,333
-Depth create,,833
-Depth create,,37
-Depth create,,136
-Depth create,,175
-Depth create,,106
-Depth create,,432
-Depth create,,84
-Depth create,,244
-Depth create,,592
-Depth create,,39
-Depth create,,93
-Depth create,,105
-Depth create,,1579
-Depth create,,540
-Depth create,,151
-Depth create,,531
-Depth create,,3122
-Depth create,,10732
-Depth create,,3338
-Depth create,,4388
-Depth create,,2914
-Depth create,,5763
-Depth create,A* solved,6683
-Depth create,A* solved,9868
-Depth create,A* solved,8094
-Depth create,A* solved,3992
-Depth create,A* solved,11613
-Depth create,A* solved,8516
-Depth create,A* solved,4571
-Depth create,A* solved,8374
+Solve Method,Duration(ms)
+Breadth solved,40780
+A* solved,55605
+A* solved g/2,55361
+Depth solved,13673
+A* solved g/4,55396
+A* solved g(n)=0,55407
+A* solved g/2,48818
+A* solved g/4,43331
+Depth solved,44303
+A* solved,43256
+Breadth solved,24864
+A* solved g(n)=0,41932
+Depth solved,26330
+Breadth solved,25443
+A* solved g/2,39930
+A* solved g/4,40026
+A* solved g(n)=0,40546
+A* solved,49485
+A* solved,43364
+A* solved g/2,21618
+A* solved g(n)=0,18024
+Breadth solved,21750
+Depth solved,20583
+A* solved g/4,21558
+Breadth solved,29279
+A* solved,43560
+A* solved g/4,36876
+A* solved g(n)=0,36889
+A* solved g/2,36922
+Depth solved,10985
+A* solved g/4,20077
+Breadth solved,15805
+A* solved,28278
+A* solved g(n)=0,13685
+A* solved g/2,14179
+Depth solved,13193
+A* solved g/2,43311
+A* solved g(n)=0,37046
+Depth solved,24616
+Breadth solved,24490
+A* solved g/4,37045
+A* solved,45497
+A* solved,50276
+A* solved g/2,37404
+A* solved g/4,36806
+Depth solved,22718
+A* solved g(n)=0,40019
+Breadth solved,24457
+A* solved g/2,32648
+Breadth solved,21642
+A* solved,39965
+A* solved g(n)=0,27392
+A* solved g/4,26924
+Depth solved,19159
+A* solved g/4,26802
+Depth solved,43485
+A* solved,27697
+A* solved g(n)=0,21364
+A* solved g/2,21221
+Breadth solved,14669
+A* solved,41628
+A* solved g(n)=0,30501
+A* solved g/2,30156
+Breadth solved,18868
+Depth solved,20158
+A* solved g/4,30744
+A* solved g/4,30051
+Breadth solved,22976
+Depth solved,23700
+A* solved,43426
+A* solved g/2,24810
+A* solved g(n)=0,24774
+A* solved g(n)=0,50835
+A* solved g/4,45661
+Breadth solved,19954
+Depth solved,10657
+A* solved,37484
+A* solved g/2,45735
+A* solved,53287
+Depth solved,18576
+A* solved g/4,37284
+A* solved g/2,37301
+Breadth solved,26030
+A* solved g(n)=0,37094
+A* solved,51958
+A* solved g/2,45382
+A* solved g/4,45405
+Depth solved,39818
+Breadth solved,25102
+A* solved g(n)=0,45052
+A* solved g/2,12280
+Depth solved,8430
+Breadth solved,6884
+A* solved g/4,6923
+A* solved g(n)=0,6939
+A* solved,12438
+A* solved g/2,19949
+A* solved g(n)=0,14742
+A* solved g/4,14727
+A* solved,27732
+Depth solved,43342
+Breadth solved,16115
+Breadth solved,27966
+A* solved g/2,45969
+A* solved g(n)=0,45847
+Depth solved,31600
+A* solved g/4,45994
+A* solved,41653
+A* solved g/2,36262
+Breadth solved,22931
+Depth solved,16463
+A* solved g/4,31076
+A* solved g(n)=0,31002
+A* solved,44470
+A* solved g(n)=0,36470
+Breadth solved,22634
+Depth solved,38074
+A* solved,42394
+A* solved g/4,31082
+A* solved g/2,31150
+Breadth solved,17753
+Depth solved,8795
+A* solved g(n)=0,13717
+A* solved,21037
+A* solved g/4,13792
+A* solved g/2,13899
+A* solved g/4,25924
+Depth solved,32930
+Breadth solved,20894
+A* solved g(n)=0,20524
+A* solved,37725
+A* solved g/2,20419
+A* solved g/4,18215
+A* solved g(n)=0,12764
+Depth solved,13773
+A* solved,35045
+Breadth solved,18418
+A* solved g/2,12697
+A* solved g/2,31332
+A* solved,48242
+A* solved g/4,25279
+Breadth solved,25408
+A* solved g(n)=0,25284
+Depth solved,32145
+Breadth solved,31866
+Depth solved,43604
+A* solved g(n)=0,28172
+A* solved,49819
+A* solved g/4,27964
+A* solved g/2,28009
+Depth solved,19382
+Breadth solved,25954
+A* solved g/4,50315
+A* solved g(n)=0,50363
+A* solved,48399
+A* solved g/2,50330
+A* solved g/2,41046
+Depth solved,14511
+Breadth solved,26247
+A* solved g/4,35817
+A* solved g(n)=0,35799
+A* solved,51638
+A* solved g/4,32974
+A* solved,50055
+Breadth solved,25593
+Depth solved,31761
+A* solved g/2,27659
+A* solved g(n)=0,27573
+A* solved g(n)=0,24933
+A* solved g/2,19588
+A* solved g/4,19682
+Breadth solved,15539
+A* solved,28072
+Depth solved,10502
+Breadth solved,26257
+A* solved g/4,40592
+A* solved g/2,40433
+Depth solved,41028
+A* solved,41433
+A* solved g(n)=0,40612
+A* solved g/2,22484
+A* solved g/4,17129
+A* solved g(n)=0,17158
+A* solved,28367
+Breadth solved,14647
+Depth solved,44593
+A* solved g/4,26906
+A* solved g/2,21066
+A* solved,49665
+Depth solved,26201
+A* solved g(n)=0,20954
+Breadth solved,26762
+A* solved g/4,17000
+A* solved g/2,11565
+Depth solved,25298
+Breadth solved,20766
+A* solved g(n)=0,10926
+A* solved,38093
+Depth solved,26503
+A* solved g(n)=0,6852
+A* solved g/2,18612
+A* solved,24096
+Breadth solved,14662
+A* solved g/4,18409
+A* solved g/2,40650
+A* solved,43085
+A* solved g/4,34880
+Breadth solved,22789
+A* solved g(n)=0,36920
+Depth solved,32768
+A* solved g/4,22031
+A* solved g/2,16830
+A* solved,33971
+Depth solved,19645
+A* solved g(n)=0,16824
+Breadth solved,19032
+A* solved,40394
+A* solved g(n)=0,15659
+Depth solved,17996
+A* solved g/2,15668
+A* solved g/4,15627
+Breadth solved,20273
+A* solved g/4,19470
+A* solved g(n)=0,14407
+Breadth solved,18624
+A* solved,34729
+A* solved g/2,14435
+Depth solved,45696
+A* solved g/4,45904
+A* solved g(n)=0,40040
+Depth solved,8355
+Breadth solved,15773
+A* solved,29291
+A* solved g/2,38090
+A* solved g/4,16463
+A* solved g/2,10383
+Breadth solved,19577
+A* solved,36326
+Depth solved,50935
+A* solved g(n)=0,11161
+A* solved g/2,34517
+A* solved,44847
+A* solved g/4,29140
+A* solved g(n)=0,29313
+Breadth solved,23059
+Depth solved,42300
+Depth solved,45296
+A* solved g/2,13529
+A* solved,39381
+Breadth solved,20613
+A* solved g/4,13540
+A* solved g(n)=0,13555
+A* solved,39975
+A* solved g/2,19408
+A* solved g/4,19406
+Depth solved,48541
+A* solved g(n)=0,18841
+Breadth solved,17611
+A* solved,31434
+Depth solved,31298
+Breadth solved,14013
+A* solved g(n)=0,20764
+A* solved g/4,20795
+A* solved g/2,20855
+A* solved g/2,30751
+Breadth solved,22001
+A* solved,40129
+A* solved g/4,25441
+Depth solved,13929
+A* solved g(n)=0,25413
+A* solved g/2,30923
+A* solved g/4,25664
+A* solved,50659
+Breadth solved,26585
+Depth solved,40105
+A* solved g(n)=0,25475
+A* solved g/2,28436
+Depth solved,24071
+A* solved g(n)=0,23082
+Breadth solved,21695
+A* solved g/4,22754
+A* solved,41151
+Depth solved,25496
+A* solved g/4,19305
+A* solved,40529
+Breadth solved,23762
+A* solved g(n)=0,19442
+A* solved g/2,19412
+A* solved g(n)=0,53070
+A* solved,48167
+A* solved g/2,48085
+Breadth solved,24707
+Depth solved,31506
+A* solved g/4,48123
+Depth solved,18743
+A* solved g(n)=0,29234
+A* solved g/2,29214
+A* solved g/4,29143
+A* solved,31671
+Breadth solved,16539
+A* solved,60108
+A* solved g/2,21613
+A* solved g(n)=0,21488
+A* solved g/4,21637
+Depth solved,25999
+Breadth solved,27982
+A* solved g/2,23781
+Breadth solved,19764
+A* solved,38344
+Depth solved,16703
+A* solved g/4,18583
+A* solved g(n)=0,18632
+A* solved g/4,48093
+A* solved,53093
+Breadth solved,27168
+A* solved g/2,42929
+Depth solved,28947
+A* solved g(n)=0,42718
+A* solved,27066
+A* solved g/4,12964
+A* solved g/2,12915
+Breadth solved,12812
+A* solved g(n)=0,12963
+Depth solved,26878
+A* solved,46862
+Depth solved,27735
+A* solved g/4,35008
+Breadth solved,22620
+A* solved g(n)=0,34127
+A* solved g/2,35065
+A* solved g/4,29065
+A* solved g/2,23891
+Breadth solved,16860
+A* solved,32769
+A* solved g(n)=0,23923
+Depth solved,34316
+Breadth solved,24162
+A* solved g/4,11222
+A* solved g/2,11265
+Depth solved,8839
+A* solved g(n)=0,11257
+A* solved,35401
+Breadth solved,28272
+A* solved g(n)=0,46699
+A* solved g/4,46683
+Depth solved,40504
+A* solved g/2,46708
+A* solved,44739
+A* solved g/2,48407
+A* solved g(n)=0,42962
+Breadth solved,22394
+Depth solved,33080
+A* solved g/4,43238
+A* solved,43931
+A* solved g/4,27482
+Breadth solved,21547
+Depth solved,36696
+A* solved g(n)=0,21880
+A* solved g/2,22318
+A* solved,42202
+A* solved g/4,20161
+Depth solved,40092
+A* solved,35033
+A* solved g/2,14901
+Breadth solved,20506
+A* solved g(n)=0,14980
+A* solved g/2,50559
+A* solved,48765
+Depth solved,14986
+A* solved g/4,45367
+A* solved g(n)=0,45415
+Breadth solved,25049
+A* solved g/2,15793
+Breadth solved,7910
+A* solved,14921
+A* solved g(n)=0,10626
+Depth solved,8352
+A* solved g/4,10629
+Depth solved,38730
+A* solved g/4,26767
+Breadth solved,21971
+A* solved,41023
+A* solved g(n)=0,26748
+A* solved g/2,26757
+Depth solved,18274
+A* solved g/2,12879
+Breadth solved,11226
+A* solved g/4,12937
+A* solved,20224
+A* solved g(n)=0,12912
+A* solved,31862
+Depth solved,23435
+A* solved g(n)=0,14729
+Breadth solved,15509
+A* solved g/4,14685
+A* solved g/2,14776
+Breadth solved,28732
+A* solved g(n)=0,43044
+Depth solved,41348
+A* solved g/4,43030
+A* solved g/2,43025
+A* solved,46245
+A* solved,45967
+A* solved g/4,38935
+A* solved g/2,38871
+A* solved g(n)=0,38947
+Depth solved,32969
+Breadth solved,20885
+Breadth solved,22345
+A* solved g(n)=0,19645
+A* solved g/4,19654
+A* solved,30600
+Depth solved,28831
+A* solved g/2,19623
+A* solved g/2,48339
+A* solved g/4,43197
+A* solved,45229
+A* solved g(n)=0,43272
+Depth solved,21405
+Breadth solved,23621
+Depth solved,29958
+A* solved,54580
+Breadth solved,27602
+A* solved g/2,30003
+A* solved g/4,30021
+A* solved g(n)=0,30016
+A* solved g(n)=0,25402
+A* solved g/2,20066
+Depth solved,44169
+Breadth solved,18428
+A* solved g/4,20146
+A* solved,31029
+A* solved g/4,17524
+Breadth solved,10079
+A* solved g(n)=0,12313
+Depth solved,17606
+A* solved g/2,12323
+A* solved,18229
+Depth solved,26565
+A* solved g/2,31707
+A* solved g(n)=0,31720
+A* solved,28459
+Breadth solved,15474
+A* solved g/4,31697
+A* solved g/2,30107
+A* solved g/4,24908
+A* solved,47575
+Breadth solved,25601
+A* solved g(n)=0,24950
+Depth solved,15644
+Breadth solved,25091
+A* solved,37157
+Depth solved,42849
+A* solved g/4,34527
+A* solved g(n)=0,34502
+A* solved g/2,34495
+A* solved,51362
+A* solved g(n)=0,29308
+Breadth solved,23872
+A* solved g/4,29360
+Depth solved,24698
+A* solved g/2,29318
+A* solved,55166
+A* solved g/2,45628
+A* solved g(n)=0,45516
+A* solved g/4,45628
+Breadth solved,25486
+Depth solved,19489
+Depth solved,35919
+A* solved g/4,16304
+A* solved g(n)=0,16296
+A* solved g/2,16325
+A* solved,37339
+Breadth solved,20321
+A* solved g(n)=0,33534
+Depth solved,25232
+A* solved g/4,28350
+A* solved g/2,28332
+Breadth solved,26043
+A* solved,51124
+A* solved g/4,22702
+A* solved g(n)=0,17556
+A* solved g/2,17524
+A* solved,48951
+Breadth solved,27133
+Depth solved,25086
+A* solved g(n)=0,32945
+Depth solved,19486
+A* solved,52557
+Breadth solved,27126
+A* solved g/2,27762
+A* solved g/4,27748
+A* solved g/4,46226
+A* solved g(n)=0,41049
+Depth solved,28448
+Breadth solved,23666
+A* solved,45052
+A* solved g/2,41042
+Depth solved,47382
+A* solved g/4,34574
+A* solved,44312
+A* solved g(n)=0,34560
+Breadth solved,22938
+A* solved g/2,34486
+A* solved g(n)=0,42944
+Depth solved,37040
+A* solved g/4,37649
+A* solved g/2,37774
+Breadth solved,24014
+A* solved,45104
+A* solved g/2,38078
+A* solved,44572
+A* solved g(n)=0,32888
+Depth solved,19657
+A* solved g/4,32870
+Breadth solved,22920
+Breadth solved,27983
+A* solved g/2,22063
+A* solved g/4,22111
+A* solved g(n)=0,22110
+Depth solved,22475
+A* solved,42036
+A* solved g/4,48461
+A* solved g(n)=0,43275
+Depth solved,46254
+A* solved g/2,43258
+Breadth solved,25316
+A* solved,49655
+Depth solved,45835
+A* solved g/4,16290
+A* solved g/2,16279
+Breadth solved,24824
+A* solved g(n)=0,16307
+A* solved,46113
+A* solved g/4,52666
+Breadth solved,22609
+A* solved,40053
+A* solved g/2,47524
+Depth solved,11986
+A* solved g(n)=0,47520
+A* solved g/4,43772
+A* solved g/2,38485
+Depth solved,21143
+Breadth solved,27534
+A* solved,52923
+A* solved g(n)=0,38568
+A* solved g(n)=0,32720
+Depth solved,38365
+A* solved,50923
+A* solved g/4,27531
+Breadth solved,26362
+A* solved g/2,27534
+A* solved,57917
+A* solved g/2,49925
+Breadth solved,26856
+A* solved g/4,50062
+Depth solved,26890
+A* solved g(n)=0,49898
+Depth solved,55776
+A* solved g/4,26739
+A* solved g/2,26730
+A* solved g(n)=0,26751
+Breadth solved,18195
+A* solved,31713
+A* solved g/2,34564
+A* solved,33448
+Breadth solved,18048
+A* solved g(n)=0,29003
+Depth solved,29023
+A* solved g/4,29382
+A* solved,34647
+Breadth solved,16657
+Depth solved,9713
+A* solved g/2,9516
+A* solved g/4,9529
+A* solved g(n)=0,9536
+Breadth solved,30734
+A* solved g(n)=0,33435
+Depth solved,30435
+A* solved g/2,33428
+A* solved,48049
+A* solved g/4,33455
+A* solved g/4,55670
+A* solved g(n)=0,50486
+A* solved g/2,50512
+Breadth solved,27116
+A* solved,52574
+Depth solved,30200
+A* solved g/4,37887
+Depth solved,30993
+A* solved g/2,32710
+A* solved,34202
+A* solved g(n)=0,32666
+Breadth solved,17797
+Breadth solved,20051
+A* solved g/2,28443
+A* solved,25854
+A* solved g(n)=0,28335
+A* solved g/4,28415
+Depth solved,32317
+A* solved g/2,30827
+Depth solved,44651
+A* solved g(n)=0,25628
+Breadth solved,18368
+A* solved,36152
+A* solved g/4,25627
+A* solved g(n)=0,33947
+Depth solved,27499
+Breadth solved,18403
+A* solved g/2,28709
+A* solved g/4,28712
+A* solved,33957
+Depth solved,33156
+Breadth solved,18340
+A* solved g(n)=0,30522
+A* solved g/2,30532
+A* solved,34183
+A* solved g/4,30453
+A* solved g/4,27409
+A* solved g/2,22220
+A* solved g(n)=0,22224
+A* solved,48028
+Breadth solved,24596
+Depth solved,27357
+A* solved g/4,37209
+A* solved g/2,31989
+A* solved g(n)=0,32019
+A* solved,42950
+Breadth solved,21710
+Depth solved,25631
+A* solved g(n)=0,36406
+A* solved,37186
+A* solved g/4,31084
+A* solved g/2,31260
+Depth solved,37288
+Breadth solved,20335
+A* solved g/4,23099
+A* solved g(n)=0,17899
+A* solved,36772
+Depth solved,34662
+Breadth solved,20488
+A* solved g/2,17968
+A* solved g/4,52475
+A* solved g/2,47338
+A* solved,49735
+Breadth solved,25225
+A* solved g(n)=0,47350
+Depth solved,24479
+Depth solved,53991
+A* solved g/4,11381
+A* solved,17721
+A* solved g/2,11372
+A* solved g(n)=0,11355
+Breadth solved,9372
+Breadth solved,31044
+A* solved g/4,42990
+A* solved,47707
+A* solved g/2,42965
+Depth solved,29645
+A* solved g(n)=0,42938
+A* solved,36705
+Breadth solved,17639
+A* solved g/2,13068
+A* solved g/4,13043
+Depth solved,29490
+A* solved g(n)=0,13039
+A* solved g/2,30197
+A* solved g(n)=0,24988
+A* solved g/4,25000
+Breadth solved,16479
+A* solved,29499
+Depth solved,37444
+A* solved g(n)=0,30335
+Depth solved,23117
+A* solved g/2,25174
+A* solved g/4,25293
+Breadth solved,15848
+A* solved,31332
+A* solved,55809
+Depth solved,10460
+A* solved g/2,24891
+A* solved g/4,24881
+A* solved g(n)=0,24925
+Breadth solved,26943
+A* solved,56250
+A* solved g(n)=0,28772
+A* solved g/2,28748
+Breadth solved,26456
+Depth solved,27988
+A* solved g/4,28789
+A* solved g/4,36463
+Breadth solved,19281
+A* solved g(n)=0,31323
+A* solved g/2,31314
+Depth solved,25589
+A* solved,32874
+A* solved g/4,34292
+A* solved g/2,29067
+A* solved,31055
+A* solved g(n)=0,29003
+Breadth solved,16377
+Depth solved,46076
+A* solved g(n)=0,59523
+Breadth solved,27902
+A* solved g/2,54308
+A* solved,54726
+Depth solved,15486
+A* solved g/4,54310
+Depth solved,28565
+A* solved,51534
+A* solved g/2,49182
+A* solved g(n)=0,49284
+Breadth solved,26880
+A* solved g/4,49154
+A* solved g/2,57858
+A* solved,46540
+A* solved g(n)=0,52331
+A* solved g/4,52420
+Depth solved,7643
+Breadth solved,25582
+Depth solved,16768
+A* solved g(n)=0,22485
+Breadth solved,17741
+A* solved g/4,22400
+A* solved g/2,22533
+A* solved,32976
+A* solved g(n)=0,55595
+A* solved g/2,50061
+A* solved,53678
+A* solved g/4,49949
+Breadth solved,27520
+Depth solved,19187
+A* solved g/4,56226
+Depth solved,18433
+A* solved,50984
+A* solved g/2,50950
+A* solved g(n)=0,50750
+Breadth solved,25867
+A* solved,49205
+A* solved g(n)=0,40680
+Depth solved,23702
+Breadth solved,22577
+A* solved g/4,40811
+A* solved g/2,40631
+Depth solved,42055
+A* solved g/2,28346
+A* solved g(n)=0,28210
+A* solved g/4,28333
+Breadth solved,25261
+A* solved,46234
+A* solved g/2,30111
+Breadth solved,18304
+A* solved g(n)=0,24975
+A* solved,35304
+Depth solved,26989
+A* solved g/4,25001
+A* solved g/2,32946
+A* solved g(n)=0,27751
+A* solved,37312
+Breadth solved,19334
+A* solved g/4,27732
+Depth solved,8652
+A* solved g(n)=0,57395
+A* solved,45855
+Breadth solved,26594
+Depth solved,8853
+A* solved g/4,52173
+A* solved g/2,52326
+Depth solved,48046
+A* solved g/4,33606
+Breadth solved,25250
+A* solved,47808
+A* solved g/2,33617
+A* solved g(n)=0,33653
+A* solved g/2,29080
+A* solved,35114
+A* solved g/4,23845
+A* solved g(n)=0,23883
+Depth solved,20789
+Breadth solved,18858
+Depth solved,53751
+A* solved g(n)=0,25979
+A* solved,30583
+Breadth solved,16763
+A* solved g/4,25956
+A* solved g/2,25849
+A* solved g(n)=0,56217
+A* solved,23892
+A* solved g/4,51050
+A* solved g/2,51113
+Breadth solved,14572
+Depth solved,9720
+A* solved g/4,49904
+Depth solved,23799
+A* solved g/2,44847
+A* solved g(n)=0,44742
+A* solved,52400
+Breadth solved,27179
+Breadth solved,33000
+Depth solved,31721
+A* solved g(n)=0,40161
+A* solved,51801
+A* solved g/4,40121
+A* solved g/2,40134
+A* solved,49596
+A* solved g(n)=0,17033
+A* solved g/2,17272
+Breadth solved,23724
+Depth solved,18148
+A* solved g/4,17254
+Breadth solved,31168
+A* solved g(n)=0,49437
+A* solved g/2,49419
+Depth solved,45090
+A* solved,50713
+A* solved g/4,49324
+A* solved g/4,44817
+A* solved,45547
+A* solved g(n)=0,39646
+Breadth solved,23218
+Depth solved,8515
+A* solved g/2,39640
+Depth solved,31255
+Breadth solved,26587
+A* solved g/2,44683
+A* solved,52210
+A* solved g(n)=0,44361
+A* solved g/4,44657
+A* solved,26524
+A* solved g(n)=0,23681
+A* solved g/2,23622
+Breadth solved,11855
+Depth solved,39312
+A* solved g/4,23628
+Depth solved,16739
+A* solved g(n)=0,36537
+A* solved g/2,36507
+Breadth solved,22027
+A* solved,43718
+A* solved g/4,36548
+A* solved,58615
+A* solved g/2,34055
+Breadth solved,28087
+Depth solved,41515
+A* solved g(n)=0,33955
+A* solved g/4,34011
+A* solved g(n)=0,21200
+Breadth solved,25375
+Depth solved,45661
+A* solved,49176
+A* solved g/2,15586
+A* solved g/4,15703
+A* solved g/2,40580
+Depth solved,33713
+A* solved g/4,35355
+A* solved,33657
+A* solved g(n)=0,35477
+Breadth solved,20021
+A* solved g/4,19989
+A* solved,39818
+Breadth solved,20430
+Depth solved,9665
+A* solved g(n)=0,14818
+A* solved g/2,14832
+A* solved g/4,24901
+Depth solved,19017
+A* solved g/2,19743
+A* solved,42553
+Breadth solved,23085
+A* solved g(n)=0,19703
+A* solved,43811
+A* solved g(n)=0,23335
+Depth solved,27763
+A* solved g/4,23558
+A* solved g/2,23627
+Breadth solved,21665
+Breadth solved,32055
+Depth solved,35195
+A* solved g/4,52333
+A* solved g/2,52352
+A* solved,52884
+A* solved g(n)=0,52350
+A* solved g/4,15534
+Breadth solved,10695
+A* solved g/2,10347
+A* solved,20406
+Depth solved,13696
+A* solved g(n)=0,10351
+A* solved g/4,41447
+Depth solved,25148
+Breadth solved,21913
+A* solved g(n)=0,36225
+A* solved g/2,36194
+A* solved,42288
+A* solved,39107
+A* solved g/4,20657
+Depth solved,14116
+Breadth solved,18807
+A* solved g/2,20556
+A* solved g(n)=0,20624
+A* solved,46258
+A* solved g/2,40709
+A* solved g(n)=0,40747
+Depth solved,11962
+A* solved g/4,40761
+Breadth solved,20834
+Breadth solved,24510
+A* solved g/2,16708
+A* solved,36199
+Depth solved,38335
+A* solved g(n)=0,16725
+A* solved g/4,16697
+A* solved,57670
+A* solved g/4,26290
+A* solved g/2,26208
+Depth solved,15498
+A* solved g(n)=0,26319
+Breadth solved,26782
+A* solved g(n)=0,50865
+A* solved g/4,45749
+Breadth solved,27955
+Depth solved,37241
+A* solved,54880
+A* solved g/2,45758
+A* solved g/2,23633
+Depth solved,13066
+A* solved g(n)=0,18476
+Breadth solved,23023
+A* solved g/4,18447
+A* solved,42618
+A* solved,39407
+A* solved g/2,20025
+Breadth solved,18699
+A* solved g/4,20021
+Depth solved,42442
+A* solved g(n)=0,20011
+A* solved g(n)=0,19775
+A* solved g/2,14552
+Breadth solved,19931
+Depth solved,30644
+A* solved g/4,14549
+A* solved,34467
+A* solved g/2,34971
+A* solved g(n)=0,29759
+A* solved g/4,29789
+A* solved,48783
+Breadth solved,24952
+Depth solved,45020
+Breadth solved,29024
+A* solved g/4,48085
+A* solved g/2,48140
+A* solved,44641
+A* solved g(n)=0,48045
+Depth solved,42555
+A* solved g(n)=0,27397
+A* solved g/2,22203
+Breadth solved,28225
+Depth solved,23568
+A* solved,55652
+A* solved g/4,22184
+A* solved g(n)=0,39682
+A* solved g/2,34554
+Breadth solved,24783
+A* solved,46296
+A* solved g/4,34480
+Depth solved,38315
+Breadth solved,30250
+A* solved,48834
+Depth solved,21881
+A* solved g(n)=0,23470
+A* solved g/4,23482
+A* solved g/2,23347
+Breadth solved,27571
+A* solved g(n)=0,41821
+A* solved g/4,41737
+A* solved g/2,41807
+Depth solved,34868
+A* solved,44042
+Breadth solved,33146
+Depth solved,21943
+A* solved,54074
+A* solved g/4,28189
+A* solved g/2,28229
+A* solved g(n)=0,28204
+A* solved g/4,29743
+A* solved g(n)=0,24576
+A* solved g/2,24523
+Depth solved,28849
+Breadth solved,24331
+A* solved,44107
+A* solved g/2,22369
+A* solved,50341
+A* solved g/4,17183
+Depth solved,20772
+Breadth solved,25841
+A* solved g(n)=0,17187
+A* solved,50344
+Depth solved,25963
+A* solved g/2,33684
+Breadth solved,23929
+A* solved g/4,33725
+A* solved g(n)=0,33615
+A* solved g/2,25098
+Depth solved,35424
+Breadth solved,16988
+A* solved g/4,19957
+A* solved,32553
+A* solved g(n)=0,19929
+Breadth solved,18528
+A* solved g(n)=0,11476
+A* solved g/2,11470
+A* solved,21498
+A* solved g/4,11489
+Depth solved,48502
+Depth solved,15213
+Breadth solved,23519
+A* solved g/4,44535
+A* solved g(n)=0,44568
+A* solved,46062
+A* solved g/2,44642
+Depth solved,27226
+Breadth solved,21585
+A* solved g/4,32875
+A* solved g(n)=0,32860
+A* solved g/2,27053
+A* solved,42213
+Breadth solved,23807
+A* solved g/2,25041
+A* solved g/4,25042
+A* solved g(n)=0,25036
+A* solved,33216
+Depth solved,28993
+A* solved g(n)=0,31151
+A* solved,31499
+Depth solved,11721
+A* solved g/2,26010
+Breadth solved,16988
+A* solved g/4,25937
+Depth solved,22410
+A* solved,38852
+A* solved g(n)=0,31166
+A* solved g/4,31117
+Breadth solved,20618
+A* solved g/2,31146
+A* solved,59171
+Depth solved,22849
+A* solved g(n)=0,53498
+A* solved g/2,53528
+A* solved g/4,53492
+Breadth solved,27605
+A* solved g(n)=0,43297
+Depth solved,33769
+A* solved g/2,37945
+A* solved,39281
+Breadth solved,20186
+A* solved g/4,37973
+Depth solved,51963
+Breadth solved,23293
+A* solved g/4,27287
+A* solved g/2,27264
+A* solved,41519
+A* solved g(n)=0,27242
+Depth solved,19711
+A* solved,30568
+A* solved g/2,30453
+A* solved g(n)=0,30413
+A* solved g/4,30448
+Breadth solved,15468
+A* solved g/2,25223
+A* solved g/4,19934
+Breadth solved,18034
+A* solved,30996
+A* solved g(n)=0,20023
+Depth solved,28329
+A* solved g/4,31352
+Breadth solved,22481
+A* solved g(n)=0,26254
+A* solved g/2,26244
+Depth solved,14277
+A* solved,41188
+A* solved,17678
+A* solved g/4,8923
+Depth solved,45530
+Breadth solved,7955
+A* solved g/2,8945
+A* solved g(n)=0,8949
+Breadth solved,31447
+Depth solved,20797
+A* solved g(n)=0,40629
+A* solved g/2,40704
+A* solved,48701
+A* solved g/4,40715
+A* solved g(n)=0,32788
+Depth solved,42209
+Breadth solved,25273
+A* solved,47041
+A* solved g/4,27767
+A* solved g/2,27740
+Breadth solved,31156
+Depth solved,39229
+A* solved g/2,50032
+A* solved g(n)=0,50069
+A* solved,50941
+A* solved g/4,50070
+Breadth solved,20757
+Depth solved,5068
+A* solved g/4,20082
+A* solved g/2,20129
+A* solved,28097
+A* solved g(n)=0,20104
+A* solved g/2,22108
+Depth solved,26214
+A* solved g(n)=0,16923
+Breadth solved,17494
+A* solved g/4,16962
+A* solved,29872
+Depth solved,31018
+A* solved g(n)=0,38694
+A* solved,43791
+Breadth solved,23162
+A* solved g/2,38667
+A* solved g/4,38718
+A* solved g(n)=0,22947
+Depth solved,25342
+A* solved,32487
+Breadth solved,17961
+A* solved g/2,17784
+A* solved g/4,17803
+Breadth solved,17944
+Depth solved,23089
+A* solved g/4,20422
+A* solved,24760
+A* solved g/2,20452
+A* solved g(n)=0,20073
+A* solved g/4,45277
+A* solved,44604
+A* solved g(n)=0,40206
+A* solved g/2,40105
+Breadth solved,22838
+Depth solved,16792
+A* solved g/2,19871
+Breadth solved,14980
+A* solved g(n)=0,14599
+A* solved,25560
+A* solved g/4,14540
+Depth solved,27613
+Breadth solved,25151
+A* solved g/2,37008
+A* solved g(n)=0,36996
+A* solved g/4,36993
+Depth solved,33726
+A* solved,39180
+A* solved g/4,37334
+Breadth solved,25835
+A* solved g/2,32068
+A* solved,49608
+Depth solved,29538
+A* solved g(n)=0,32080
+A* solved g(n)=0,36190
+A* solved,49543
+A* solved g/2,31007
+Depth solved,35758
+A* solved g/4,31001
+Breadth solved,25760
+Breadth solved,32452
+A* solved g/4,22347
+A* solved g/2,22313
+A* solved,52106
+Depth solved,20820
+A* solved g(n)=0,22355
+A* solved,44457
+A* solved g/4,31907
+Breadth solved,19891
+A* solved g(n)=0,31819
+Depth solved,15115
+A* solved g/2,31969
+A* solved,46918
+A* solved g/2,21381
+Depth solved,33649
+A* solved g/4,21386
+A* solved g(n)=0,21374
+Breadth solved,22701
+A* solved g(n)=0,20227
+Breadth solved,22355
+Depth solved,17136
+A* solved g/4,15075
+A* solved,37955
+A* solved g/2,15059
+A* solved g/4,42069
+Depth solved,32160
+A* solved,52257
+A* solved g(n)=0,36907
+A* solved g/2,36861
+Breadth solved,26566
+A* solved g(n)=0,31994
+A* solved g/4,26307
+A* solved,34136
+A* solved g/2,26198
+Depth solved,22177
+Breadth solved,18284
+A* solved,50758
+A* solved g(n)=0,19487
+Depth solved,45178
+A* solved g/4,19525
+Breadth solved,24017
+A* solved g/2,19552
+Breadth solved,18570
+A* solved,25044
+A* solved g(n)=0,47993
+Depth solved,10459
+A* solved g/2,47935
+A* solved g/4,48010
+Depth solved,39219
+A* solved g/2,21019
+Breadth solved,23377
+A* solved g/4,21004
+A* solved,45975
+A* solved g(n)=0,21033
+A* solved g/4,38830
+A* solved,40680
+Depth solved,16959
+Breadth solved,22658
+A* solved g/2,33647
+A* solved g(n)=0,33670
+Breadth solved,23066
+A* solved g(n)=0,29912
+Depth solved,17120
+A* solved g/4,29927
+A* solved,33545
+A* solved g/2,29931
+A* solved g/2,33481
+A* solved,49052
+Depth solved,35027
+Breadth solved,25111
+A* solved g/4,28149
+A* solved g(n)=0,28289
+A* solved g(n)=0,33444
+A* solved g/2,28215
+Breadth solved,13619
+Depth solved,38109
+A* solved g/4,28297
+A* solved,26270
+A* solved,36708
+Breadth solved,16409
+A* solved g/2,25180
+A* solved g(n)=0,25165
+Depth solved,40914
+A* solved g/4,25187
+A* solved,26762
+Depth solved,41761
+A* solved g/4,13350
+Breadth solved,11262
+A* solved g/2,13349
+A* solved g(n)=0,13356
+Depth solved,27071
+Breadth solved,22546
+A* solved g(n)=0,42885
+A* solved g/2,42763
+A* solved g/4,42858
+A* solved,44369
+A* solved g(n)=0,33991
+Breadth solved,26167
+A* solved g/2,28770
+A* solved g/4,28824
+Depth solved,12548
+A* solved,51567
+Breadth solved,25530
+A* solved g/2,42813
+A* solved,37667
+Depth solved,46547
+A* solved g(n)=0,42701
+A* solved g/4,42800
+A* solved g/4,53067
+A* solved,50789
+A* solved g(n)=0,47966
+Depth solved,20325
+A* solved g/2,47900
+Breadth solved,25839
+A* solved g(n)=0,50452
+Breadth solved,26930
+A* solved g/2,45229
+Depth solved,37994
+A* solved g/4,45251
+A* solved,53329
+Breadth solved,28222
+A* solved g/2,26914
+A* solved,45280
+Depth solved,35705
+A* solved g(n)=0,26813
+A* solved g/4,26883
+A* solved g/2,50394
+Depth solved,43184
+A* solved g/4,45203
+A* solved,50048
+Breadth solved,25942
+A* solved g(n)=0,45188
+Depth solved,46001
+Breadth solved,17424
+A* solved g(n)=0,31426
+A* solved g/2,31268
+A* solved,34202
+A* solved g/4,31436
+Depth solved,27608
+A* solved g/2,18333
+Breadth solved,19664
+A* solved g(n)=0,18371
+A* solved,37582
+A* solved g/4,18384
+A* solved g/4,20009
+Depth solved,23685
+A* solved,29319
+A* solved g(n)=0,14819
+A* solved g/2,14884
+Breadth solved,16474
+Depth solved,22305
+A* solved g/4,26117
+A* solved g/2,26093
+A* solved g(n)=0,26073
+Breadth solved,15501
+A* solved,27711
+A* solved g/2,37957
+A* solved,34050
+A* solved g/4,32771
+A* solved g(n)=0,31072
+Breadth solved,17596
+Depth solved,8065
+A* solved g/2,46194
+A* solved,51725
+Breadth solved,26851
+Depth solved,17134
+A* solved g(n)=0,40905
+A* solved g/4,40975
+A* solved g/2,46465
+Depth solved,37577
+Breadth solved,22463
+A* solved g/4,41376
+A* solved,43442
+A* solved g(n)=0,41359
+Depth solved,17421
+A* solved g/4,20585
+Breadth solved,14677
+A* solved g/2,20553
+A* solved,27498
+A* solved g(n)=0,20558
+Depth solved,11996
+Breadth solved,23711
+A* solved g/2,43365
+A* solved g(n)=0,43385
+A* solved g/4,43408
+A* solved,41988
+A* solved g(n)=0,17601
+A* solved g/4,12379
+Depth solved,40357
+A* solved,18466
+Breadth solved,11726
+A* solved g/2,12382
+A* solved g(n)=0,37708
+Depth solved,28601
+A* solved g/2,32525
+Breadth solved,21135
+A* solved g/4,32519
+A* solved,41027
+Depth solved,45095
+A* solved g(n)=0,27734
+A* solved g/4,27767
+Breadth solved,27623
+A* solved,54075
+A* solved g/2,27684
+A* solved,34509
+A* solved g(n)=0,20068
+A* solved g/4,20128
+A* solved g/2,20136
+Breadth solved,15436
+Depth solved,22560
+Depth solved,52128
+A* solved g/4,9655
+A* solved,30055
+A* solved g/2,9685
+A* solved g(n)=0,9709
+Breadth solved,17701
+A* solved g(n)=0,35350
+Breadth solved,15961
+A* solved g/2,30201
+A* solved,30933
+A* solved g/4,30245
+Depth solved,43193
+A* solved,34890
+A* solved g(n)=0,21374
+A* solved g/2,21405
+Depth solved,35225
+Breadth solved,16492
+A* solved g/4,21546
+A* solved g/2,25997
+A* solved,49269
+A* solved g/4,20520
+Depth solved,36528
+Breadth solved,25455
+A* solved g(n)=0,20536
+A* solved g/2,16785
+Breadth solved,20339
+A* solved,36838
+Depth solved,30066
+A* solved g(n)=0,11323
+A* solved g/4,11298
+A* solved g/4,37788
+Depth solved,27318
+A* solved g/2,32286
+A* solved,36226
+Breadth solved,18657
+A* solved g(n)=0,32368
+A* solved,57742
+A* solved g/4,21099
+A* solved g(n)=0,21092
+A* solved g/2,21107
+Breadth solved,26675
+Depth solved,40271
+A* solved g(n)=0,35299
+Depth solved,19502
+A* solved,40777
+Breadth solved,20813
+A* solved g/2,30135
+A* solved g/4,30131
+A* solved g(n)=0,19844
+A* solved g/2,14681
+Depth solved,10226
+A* solved,24239
+A* solved g/4,14632
+Breadth solved,12428
+A* solved g/2,40645
+A* solved,51153
+A* solved g(n)=0,35365
+Breadth solved,26478
+Depth solved,25511
+A* solved g/4,35486
+Depth solved,37890
+A* solved g/4,42611
+Breadth solved,21668
+A* solved g(n)=0,42566
+A* solved,42682
+A* solved g/2,42592
+A* solved g/4,30484
+A* solved g/2,25287
+A* solved g(n)=0,25309
+Breadth solved,26106
+A* solved,48418
+Depth solved,23799
+Depth solved,18963
+A* solved g/2,27977
+A* solved g(n)=0,27963
+A* solved,31291
+Breadth solved,15979
+A* solved g/4,27989
+A* solved,33057
+A* solved g/4,17611
+A* solved g(n)=0,17586
+Depth solved,38904
+Breadth solved,15283
+A* solved g/2,17538
+Breadth solved,33223
+A* solved g/4,25524
+Depth solved,36438
+A* solved g(n)=0,25544
+A* solved,54594
+A* solved g/2,25543
+Depth solved,37896
+A* solved g/4,18062
+Breadth solved,23808
+A* solved g(n)=0,18054
+A* solved g/2,18052
+A* solved,43759
+A* solved g(n)=0,35985
+A* solved g/2,30849
+A* solved,49129
+Breadth solved,25988
+A* solved g/4,30823
+Depth solved,24596
+A* solved g/2,30372
+Breadth solved,26585
+A* solved g/4,25307
+A* solved g(n)=0,25304
+A* solved,51647
+Depth solved,34326
+Breadth solved,21218
+A* solved g/4,13006
+Depth solved,37393
+A* solved g(n)=0,13002
+A* solved,29098
+A* solved g/2,12997
+A* solved g/4,29922
+A* solved,54747
+Breadth solved,27960
+Depth solved,18450
+A* solved g(n)=0,24707
+A* solved g/2,24735
+Breadth solved,27422
+A* solved,42018
+A* solved g(n)=0,24572
+A* solved g/4,24607
+A* solved g/2,24476
+Depth solved,21319
+Depth solved,29550
+A* solved,42984
+A* solved g(n)=0,37475
+Breadth solved,21975
+A* solved g/4,37476
+A* solved g/2,37479
+Breadth solved,32988
+Depth solved,23106
+A* solved g/2,50677
+A* solved,53946
+A* solved g/4,50632
+A* solved g(n)=0,50722
+A* solved g(n)=0,30329
+A* solved,38928
+A* solved g/4,25062
+Breadth solved,20579
+A* solved g/2,25146
+Depth solved,18469
+Depth solved,28379
+Breadth solved,27935
+A* solved g(n)=0,53990
+A* solved,55159
+A* solved g/4,53991
+A* solved g/2,53976
+A* solved g(n)=0,52152
+A* solved g/2,46892
+Breadth solved,25754
+A* solved,50109
+Depth solved,27429
+A* solved g/4,46695
+Breadth solved,20803
+A* solved g/4,24364
+A* solved g(n)=0,24318
+A* solved,30399
+A* solved g/2,24261
+Depth solved,16961
+A* solved g/4,18263
+Depth solved,34241
+A* solved g(n)=0,13143
+A* solved g/2,13167
+A* solved,25852
+Breadth solved,13471
+Depth solved,23501
+Breadth solved,16566
+A* solved g/2,16013
+A* solved g(n)=0,16017
+A* solved g/4,16032
+A* solved,28974
+A* solved g(n)=0,37327
+Breadth solved,16453
+A* solved g/4,32086
+Depth solved,21815
+A* solved,32801
+A* solved g/2,32082
+A* solved g/4,47252
+A* solved g/2,41839
+Breadth solved,22944
+A* solved,44359
+A* solved g(n)=0,41923
+Depth solved,29030
+A* solved g/2,31985
+A* solved g/4,26806
+Breadth solved,19288
+A* solved g(n)=0,26833
+A* solved,38009
+Depth solved,17447
+A* solved,54631
+A* solved g/2,35410
+Breadth solved,25431
+Depth solved,20547
+A* solved g(n)=0,35405
+A* solved g/4,35430
+Depth solved,37421
+A* solved g(n)=0,34788
+A* solved g/2,34886
+Breadth solved,22733
+A* solved g/4,34873
+A* solved,42421
+Breadth solved,24188
+Depth solved,18165
+A* solved,33447
+A* solved g/2,19885
+A* solved g(n)=0,19968
+A* solved g/4,19975
+A* solved,34567
+Depth solved,38919
+A* solved g/2,26958
+A* solved g/4,26930
+Breadth solved,15939
+A* solved g(n)=0,26975
+A* solved g/2,22623
+Depth solved,28126
+A* solved,29071
+A* solved g/4,17487
+A* solved g(n)=0,17448
+Breadth solved,16603
+Depth solved,22638
+A* solved,28020
+A* solved g/2,19537
+A* solved g/4,19492
+Breadth solved,15647
+A* solved g(n)=0,19531
+A* solved g/4,54884
+A* solved,51679
+A* solved g/2,49554
+A* solved g(n)=0,49518
+Breadth solved,26633
+Depth solved,23581
+Breadth solved,30443
+A* solved,47112
+A* solved g/4,15305
+A* solved g/2,15298
+Depth solved,34139
+A* solved g(n)=0,15288
+Breadth solved,27014
+A* solved,37748
+Depth solved,36057
+A* solved g/4,19890
+A* solved g(n)=0,19896
+A* solved g/2,19853
+Breadth solved,20708
+A* solved g/2,19828
+A* solved,27050
+A* solved g(n)=0,19901
+Depth solved,18604
+A* solved g/4,19803
+A* solved,39107
+A* solved g(n)=0,29985
+A* solved g/4,29994
+A* solved g/2,29967
+Depth solved,36793
+Breadth solved,19557
+Breadth solved,20114
+Depth solved,33218
+A* solved,28658
+A* solved g/4,17488
+A* solved g(n)=0,17445
+A* solved g/2,17415
+A* solved g(n)=0,24631
+Depth solved,8993
+Breadth solved,12447
+A* solved,24252
+A* solved g/2,19328
+A* solved g/4,19425
+Breadth solved,32252
+A* solved g(n)=0,34074
+Depth solved,14067
+A* solved,49651
+A* solved g/4,34078
+A* solved g/2,34072
+A* solved g/2,45062
+Depth solved,17394
+A* solved,50663
+A* solved g(n)=0,39776
+A* solved g/4,39761
+Breadth solved,26351
+A* solved g/4,19151
+A* solved g(n)=0,13958
+A* solved,27439
+Breadth solved,14013
+A* solved g/2,26363
+Depth solved,35454
+A* solved g/2,19740
+A* solved g/4,14478
+A* solved g(n)=0,14128
+A* solved,31000
+Depth solved,47623
+Breadth solved,18110
+Depth solved,35168
+A* solved g(n)=0,18732
+A* solved g/2,18863
+A* solved g/4,18898
+Breadth solved,21768
+A* solved,40786
+A* solved g(n)=0,31717
+Breadth solved,16142
+A* solved g/2,27375
+A* solved,30730
+A* solved g/4,27373
+Depth solved,43701
+A* solved g(n)=0,52043
+Depth solved,13209
+A* solved,21617
+A* solved g/2,50090
+Breadth solved,12881
+A* solved g/4,50089
+A* solved,36374
+Depth solved,34630
+A* solved g/4,42941
+Breadth solved,19322
+A* solved g/2,42907
+A* solved g(n)=0,42947
+A* solved g/2,18249
+A* solved g/4,13044
+Breadth solved,17167
+A* solved,31926
+Depth solved,20650
+A* solved g(n)=0,13032
+Depth solved,46600
+A* solved g/4,13676
+Breadth solved,26236
+A* solved g(n)=0,13666
+A* solved,47656
+A* solved g/2,13679
+A* solved g/2,24141
+A* solved g(n)=0,18922
+Breadth solved,14791
+A* solved g/4,18970
+Depth solved,10898
+A* solved,27247
+A* solved,55963
+A* solved g(n)=0,37863
+A* solved g/2,37837
+Breadth solved,26111
+A* solved g/4,37828
+Depth solved,30534
+A* solved g(n)=0,18083
+Breadth solved,14329
+Depth solved,33683
+A* solved g/2,12908
+A* solved,24322
+A* solved g/4,12918
+Depth solved,27418
+A* solved g(n)=0,29932
+A* solved,54338
+A* solved g/2,29952
+Breadth solved,27720
+A* solved g/4,29776
+A* solved,54179
+A* solved g/4,24803
+A* solved g(n)=0,24742
+A* solved g/2,24798
+Breadth solved,24912
+Depth solved,37592
+Breadth solved,20229
+Depth solved,8667
+A* solved,27910
+A* solved g(n)=0,16159
+A* solved g/4,16130
+A* solved g/2,16150
+A* solved,43011
+Depth solved,19961
+A* solved g/2,37263
+A* solved g(n)=0,27655
+Breadth solved,20272
+A* solved g/4,37220
+Depth solved,42745
+A* solved,35272
+A* solved g/4,34032
+Breadth solved,17923
+A* solved g(n)=0,34110
+A* solved g/2,34086
+Depth solved,17775
+A* solved,16721
+Breadth solved,8696
+A* solved g/2,14335
+A* solved g(n)=0,14339
+A* solved g/4,14336
+Depth solved,42241
+A* solved g(n)=0,23923
+Breadth solved,19052
+A* solved,36719
+A* solved g/4,23927
+A* solved g/2,23929
+A* solved g(n)=0,29654
+Breadth solved,20200
+A* solved g/4,24487
+Depth solved,29988
+A* solved g/2,24441
+A* solved,39094
+A* solved g/4,39686
+A* solved g(n)=0,34536
+A* solved g/2,34413
+A* solved,46077
+Breadth solved,24989
+Depth solved,26969
+A* solved g/4,34164
+A* solved g(n)=0,28995
+Depth solved,26395
+A* solved,36939
+A* solved g/2,28987
+Breadth solved,20242
+Depth solved,41285
+A* solved g/4,31043
+A* solved g/2,31058
+A* solved g(n)=0,31044
+Breadth solved,24021
+A* solved,43689
+Breadth solved,23304
+A* solved,35671
+A* solved g/4,27902
+A* solved g/2,27776
+A* solved g(n)=0,27890
+Depth solved,36383
+Breadth solved,31446
+A* solved,50635
+Depth solved,33478
+A* solved g/2,35574
+A* solved g/4,35563
+A* solved g(n)=0,35587
+Depth solved,20820
+A* solved g(n)=0,25743
+A* solved g/4,25700
+A* solved,33927
+Breadth solved,18263
+A* solved g/2,25740
+A* solved,41775
+Depth solved,30291
+A* solved g/4,20799
+A* solved g/2,20851
+A* solved g(n)=0,20854
+Breadth solved,18886
+Breadth solved,21419
+A* solved g/4,27531
+A* solved,29643
+Depth solved,44220
+A* solved g/2,27467
+A* solved g(n)=0,27493
+A* solved g/4,16197
+A* solved,29141
+A* solved g(n)=0,11011
+Breadth solved,17051
+A* solved g/2,11017
+Depth solved,20426
+Breadth solved,19832
+Depth solved,6944
+A* solved g(n)=0,12517
+A* solved g/4,12541
+A* solved g/2,12520
+A* solved,25624
+A* solved g/4,34044
+A* solved,31962
+Breadth solved,16178
+Depth solved,45808
+A* solved g/2,28902
+A* solved g(n)=0,28923
+A* solved g/2,46965
+A* solved g/4,41699
+A* solved g(n)=0,41809
+Depth solved,34699
+A* solved,41897
+Breadth solved,21392
+Depth solved,37499
+A* solved g/4,41103
+A* solved g/2,41146
+A* solved,53052
+A* solved g(n)=0,41109
+Breadth solved,28025
+A* solved g/2,29934
+A* solved g/4,24742
+Breadth solved,17624
+A* solved,31194
+A* solved g(n)=0,24778
+Depth solved,27584
+Breadth solved,22544
+Depth solved,27195
+A* solved g(n)=0,9295
+A* solved,32120
+A* solved g/4,9284
+A* solved g/2,9292
+Breadth solved,21547
+A* solved g/4,29183
+A* solved,32601
+A* solved g/2,29213
+A* solved g(n)=0,29143
+Depth solved,14890
+A* solved g/2,27004
+A* solved g(n)=0,21862
+A* solved,43226
+Depth solved,36476
+A* solved g/4,21835
+Breadth solved,23373
+Depth solved,33150
+A* solved g/4,31502
+Breadth solved,26971
+A* solved g/2,31537
+A* solved g(n)=0,31591
+A* solved,51626
+Breadth solved,24894
+Depth solved,10015
+A* solved g/2,18694
+A* solved g(n)=0,16942
+A* solved,38243
+A* solved g/4,16957
+Depth solved,41964
+A* solved g/2,30625
+Breadth solved,17738
+A* solved g(n)=0,21434
+A* solved g/4,21444
+A* solved,33593
+A* solved g/2,39081
+A* solved,47684
+A* solved g/4,33993
+Breadth solved,25820
+Depth solved,19073
+A* solved g(n)=0,33953
+A* solved,56684
+A* solved g(n)=0,43502
+Breadth solved,26225
+Depth solved,13581
+A* solved g/4,43996
+A* solved g/2,44104
+Depth solved,36007
+Breadth solved,16322
+A* solved g/2,25379
+A* solved g/4,25397
+A* solved g(n)=0,25437
+A* solved,29914
+Depth solved,41775
+A* solved g/2,31705
+A* solved g/4,31739
+A* solved,41343
+A* solved g(n)=0,31683
+Breadth solved,21414
+A* solved g/2,36121
+A* solved g/4,30945
+A* solved g(n)=0,30924
+Breadth solved,20328
+A* solved,39471
+Depth solved,20401
+A* solved g/2,34777
+A* solved g/4,29671
+Depth solved,23449
+Breadth solved,24925
+A* solved g(n)=0,29671
+A* solved,47048
+A* solved g/2,29919
+A* solved,38703
+Breadth solved,21246
+Depth solved,15208
+A* solved g(n)=0,24529
+A* solved g/4,24733
+A* solved g/4,13353
+Depth solved,12083
+A* solved g(n)=0,8174
+A* solved g/2,8159
+Breadth solved,8270
+A* solved,16216
+A* solved g/2,26282
+A* solved g(n)=0,21143
+Breadth solved,20015
+A* solved g/4,21137
+A* solved,37924
+Depth solved,35585
+A* solved g(n)=0,40483
+Breadth solved,21802
+A* solved,42330
+Depth solved,36475
+A* solved g/4,35374
+A* solved g/2,35371
+A* solved,30214
+A* solved g/2,7415
+Depth solved,16340
+A* solved g(n)=0,7423
+A* solved g/4,7404
+Breadth solved,16007
+A* solved g/4,21885
+A* solved g(n)=0,16701
+A* solved,29100
+Breadth solved,15710
+Depth solved,15044
+A* solved g/2,16695
+A* solved,57490
+Breadth solved,26666
+A* solved g(n)=0,33376
+Depth solved,18326
+A* solved g/4,33274
+A* solved g/2,33393
+A* solved g/2,56701
+Breadth solved,26386
+Depth solved,37745
+A* solved g(n)=0,51629
+A* solved g/4,51635
+A* solved,51724
+A* solved g(n)=0,11197
+Depth solved,26997
+A* solved,17333
+Breadth solved,10671
+A* solved g/4,6035
+A* solved g/2,6021
+A* solved g/4,47812
+A* solved g(n)=0,42612
+A* solved,50756
+A* solved g/2,42113
+Breadth solved,26214
+Depth solved,28595
+A* solved g(n)=0,39721
+A* solved,46900
+A* solved g/4,34730
+Depth solved,32201
+A* solved g/2,34656
+Breadth solved,24353
+A* solved g(n)=0,47160
+A* solved,36430
+A* solved g/4,41939
+Breadth solved,20771
+A* solved g/2,41949
+Depth solved,46083
+Depth solved,29862
+A* solved,38699
+A* solved g(n)=0,21741
+A* solved g/4,21587
+A* solved g/2,21704
+Breadth solved,21557
+A* solved g/4,12924
+A* solved g(n)=0,7630
+Depth solved,12515
+A* solved,10803
+A* solved g/2,7793
+Breadth solved,5713
+A* solved,34796
+Depth solved,37601
+A* solved g(n)=0,24652
+A* solved g/2,24667
+A* solved g/4,24638
+Breadth solved,15783
+A* solved g/2,40125
+Depth solved,28756
+A* solved g/4,34972
+Breadth solved,21649
+A* solved,41904
+A* solved g(n)=0,34943
+A* solved g/2,27468
+Breadth solved,20723
+A* solved g/4,23386
+Depth solved,12563
+A* solved,37751
+A* solved g(n)=0,23287
+A* solved g/2,34800
+A* solved g(n)=0,29599
+Depth solved,18334
+Breadth solved,22191
+A* solved,41916
+A* solved g/4,29628
+A* solved g/4,18395
+Breadth solved,18656
+A* solved g(n)=0,13206
+A* solved,30844
+A* solved g/2,13221
+Depth solved,32427
+A* solved g/4,21117
+Breadth solved,18019
+A* solved g/2,15928
+A* solved,29845
+A* solved g(n)=0,15883
+Depth solved,24714
+Depth solved,27618
+A* solved g/4,31615
+A* solved g/2,31645
+A* solved g(n)=0,31630
+Breadth solved,21615
+A* solved,41740
+Breadth solved,33532
+A* solved g(n)=0,28119
+A* solved g/4,28215
+Depth solved,15988
+A* solved,54124
+A* solved g/2,28225
+Breadth solved,26445
+A* solved g/4,22879
+A* solved,35834
+A* solved g/2,22877
+A* solved g(n)=0,22865
+Depth solved,22860
+A* solved g/4,12690
+A* solved g/2,7387
+Depth solved,17862
+A* solved g(n)=0,7493
+Breadth solved,14411
+A* solved,21972
+A* solved g/4,39108
+A* solved,33261
+Breadth solved,18920
+A* solved g(n)=0,33986
+A* solved g/2,33859
+Depth solved,12284
+A* solved g(n)=0,25290
+Breadth solved,14432
+Depth solved,45387
+A* solved g/4,20090
+A* solved g/2,20111
+A* solved,28585
+A* solved g(n)=0,33889
+Depth solved,15986
+Breadth solved,16347
+A* solved,31899
+A* solved g/4,28708
+A* solved g/2,28711
+A* solved g/2,28238
+A* solved g(n)=0,23022
+A* solved,31923
+A* solved g/4,23109
+Depth solved,19870
+Breadth solved,17578
+A* solved,48401
+A* solved g/2,40686
+A* solved g(n)=0,40549
+Breadth solved,22964
+Depth solved,19378
+A* solved g/4,40606
+A* solved g(n)=0,22363
+A* solved g/2,17223
+Depth solved,35124
+A* solved g/4,17211
+Breadth solved,14266
+A* solved,25572
+Depth solved,37698
+A* solved g/4,18594
+A* solved,29694
+A* solved g/2,18581
+Breadth solved,16354
+A* solved g(n)=0,18565
+A* solved,37941
+Breadth solved,18566
+A* solved g/2,14427
+A* solved g/4,14402
+Depth solved,47065
+A* solved g(n)=0,14436
+Depth solved,26737
+A* solved,40973
+A* solved g/4,28668
+A* solved g/2,28812
+A* solved g(n)=0,28827
+Breadth solved,20813
+Breadth solved,26179
+A* solved g/4,14391
+A* solved g/2,14399
+A* solved g(n)=0,14429
+A* solved,38502
+Depth solved,49159
+Breadth solved,22069
+A* solved g/2,22557
+A* solved,32993
+A* solved g/4,22510
+A* solved g(n)=0,22501
+Depth solved,43247
+Depth solved,23158
+A* solved g/4,22080
+Breadth solved,19086
+A* solved g(n)=0,22037
+A* solved g/2,22031
+A* solved,29331
+A* solved g/2,23554
+A* solved,30501
+A* solved g(n)=0,18254
+Depth solved,23242
+A* solved g/4,18373
+Breadth solved,16994
+A* solved,39772
+Breadth solved,18220
+Depth solved,25603
+A* solved g/2,27172
+A* solved g(n)=0,27202
+A* solved g/4,27180
+A* solved g(n)=0,22597
+Depth solved,24512
+A* solved,32916
+A* solved g/4,17461
+A* solved g/2,17465
+Breadth solved,16894
+Depth solved,28554
+A* solved g(n)=0,10402
+A* solved g/4,10412
+A* solved,29123
+A* solved g/2,10410
+Breadth solved,17409
+A* solved g/2,32995
+A* solved g/4,27653
+A* solved,40293
+Depth solved,48245
+Breadth solved,20387
+A* solved g(n)=0,27655
+A* solved g/4,32537
+Breadth solved,20689
+A* solved g(n)=0,27415
+A* solved g/2,27422
+A* solved,37889
+Depth solved,36296
+Breadth solved,30001
+A* solved,46626
+A* solved g(n)=0,12588
+A* solved g/4,12587
+Depth solved,42609
+A* solved g/2,12573
+Breadth solved,23356
+A* solved g/4,18749
+Depth solved,45580
+A* solved g(n)=0,18740
+A* solved,32172
+A* solved g/2,18700
+A* solved g(n)=0,20281
+A* solved g/4,15033
+Breadth solved,17936
+A* solved g/2,15170
+Depth solved,46822
+A* solved,35205
+A* solved g(n)=0,45935
+Depth solved,34573
+Breadth solved,26358
+A* solved,51900
+A* solved g/2,40780
+A* solved g/4,40733
+Breadth solved,32242
+A* solved g(n)=0,36346
+A* solved g/4,36398
+A* solved g/2,36285
+Depth solved,22592
+A* solved,53009
+A* solved,51683
+Breadth solved,24973
+Depth solved,12923
+A* solved g/4,40941
+A* solved g(n)=0,41013
+A* solved g/2,41024
+A* solved g(n)=0,29802
+A* solved,32873
+Depth solved,35318
+A* solved g/4,24621
+A* solved g/2,24591
+Breadth solved,20275
+A* solved g/2,32659
+Breadth solved,22577
+A* solved g(n)=0,27586
+A* solved g/4,27625
+A* solved,42716
+Depth solved,24567
+Depth solved,28276
+A* solved g/2,36778
+Breadth solved,28296
+A* solved,55402
+A* solved g/4,36857
+A* solved g(n)=0,36814
+Breadth solved,27615
+A* solved,40461
+Depth solved,8786
+A* solved g/4,46052
+A* solved g/2,46070
+A* solved g(n)=0,46052
+A* solved g/4,30205
+A* solved g/2,25019
+A* solved,38819
+A* solved g(n)=0,24972
+Breadth solved,20680
+Depth solved,46859
+A* solved g/4,29788
+A* solved g(n)=0,24505
+Breadth solved,27021
+A* solved g/2,24930
+Depth solved,37211
+A* solved,52840
+Breadth solved,28971
+Depth solved,18579
+A* solved,41733
+A* solved g/4,30000
+A* solved g/2,29977
+A* solved g(n)=0,10335
+Breadth solved,23513
+Depth solved,51028
+A* solved g/4,51098
+A* solved g(n)=0,50980
+A* solved,33984
+A* solved g/2,51118
+Breadth solved,16696
+A* solved g(n)=0,26398
+A* solved g/4,26492
+A* solved g/2,26442
+A* solved,18576
+Depth solved,47434
+A* solved g/2,21269
+Breadth solved,20221
+A* solved,38649
+A* solved g(n)=0,16103
+Depth solved,35553
+A* solved g/4,16111
+Depth solved,53788
+A* solved g(n)=0,32965
+A* solved g/4,32977
+A* solved,37216
+Breadth solved,20531
+A* solved g/2,32960
+Breadth solved,27965
+A* solved g/4,18053
+A* solved g/2,18094
+A* solved,42605
+A* solved g(n)=0,18030
+Depth solved,31397
+A* solved g/2,13476
+A* solved g(n)=0,8283
+Depth solved,41953
+A* solved g/4,8293
+A* solved,19504
+Breadth solved,9929
+Depth solved,39979
+A* solved g/2,25859
+A* solved g(n)=0,26002
+A* solved,29930
+A* solved g/4,25974
+Breadth solved,15633
+A* solved,47579
+Breadth solved,23497
+Depth solved,41187
+A* solved g/2,14301
+A* solved g/4,14286
+A* solved g(n)=0,14243
+A* solved g/2,41628
+A* solved g(n)=0,36420
+Breadth solved,21446
+A* solved,40811
+Depth solved,44177
+A* solved g/4,36393
+A* solved g/2,41113
+A* solved,48585
+A* solved g/4,35963
+Breadth solved,26819
+Depth solved,20180
+A* solved g(n)=0,35926
+Breadth solved,22555
+A* solved g/2,13523
+A* solved g/4,13524
+Depth solved,29878
+A* solved g(n)=0,13368
+A* solved,30744
+Depth solved,53188
+Breadth solved,10117
+A* solved g/4,13890
+A* solved g(n)=0,13951
+A* solved g/2,13946
+A* solved,19941
+A* solved,24319
+Breadth solved,12601
+A* solved g/4,12351
+A* solved g(n)=0,12258
+A* solved g/2,12349
+Depth solved,5694
+A* solved g(n)=0,47253
+A* solved,49996
+A* solved g/4,42084
+A* solved g/2,42076
+Depth solved,28071
+Breadth solved,26264
+Depth solved,15351
+A* solved g/2,13057
+A* solved g(n)=0,13062
+Breadth solved,23788
+A* solved g/4,13056
+A* solved,44667
+A* solved g/4,36486
+A* solved g/2,31341
+Breadth solved,26404
+Depth solved,29115
+A* solved g(n)=0,31350
+A* solved,50882
+A* solved,33153
+Depth solved,8198
+A* solved g/2,19872
+Breadth solved,14647
+A* solved g(n)=0,19782
+A* solved g/4,19858
+A* solved,60702
+Depth solved,24810
+Breadth solved,28276
+A* solved g(n)=0,55355
+A* solved g/2,55405
+A* solved g/4,55328
+A* solved g/2,30495
+A* solved g(n)=0,25283
+Depth solved,5368
+Breadth solved,14561
+A* solved g/4,25312
+A* solved,27781
+A* solved g/2,22743
+A* solved g(n)=0,17550
+A* solved g/4,17579
+Depth solved,36746
+A* solved,28614
+Breadth solved,15894
+A* solved g(n)=0,22724
+A* solved g/4,17426
+A* solved,41971
+Depth solved,36350
+Breadth solved,22562
+A* solved g/2,17496
+A* solved g/4,31988
+A* solved g(n)=0,26784
+Depth solved,35395
+A* solved,39898
+A* solved g/2,26822
+Breadth solved,21525
+A* solved g/4,23305
+Depth solved,35943
+A* solved g(n)=0,18069
+A* solved,27053
+Breadth solved,15628
+A* solved g/2,18160
+A* solved g/2,42611
+Breadth solved,21726
+A* solved g/4,37300
+Depth solved,20345
+A* solved g(n)=0,37173
+A* solved,42955
+A* solved,28865
+Breadth solved,12763
+A* solved g/4,18043
+Depth solved,16938
+A* solved g(n)=0,18033
+A* solved g/2,18070
+A* solved g(n)=0,22849
+Depth solved,46276
+Breadth solved,10359
+A* solved g/4,17690
+A* solved,20010
+A* solved g/2,17654
+Depth solved,17081
+Breadth solved,20245
+A* solved g(n)=0,30564
+A* solved g/2,30593
+A* solved,39096
+A* solved g/4,30580
+Breadth solved,22625
+A* solved g/2,25706
+A* solved,33378
+Depth solved,33879
+A* solved g(n)=0,25635
+A* solved g/4,25718
+A* solved g(n)=0,28573
+Depth solved,14519
+A* solved g/4,23426
+A* solved g/2,23462
+Breadth solved,26386
+A* solved,50182
+A* solved g(n)=0,20952
+Breadth solved,18531
+A* solved g/4,15763
+A* solved g/2,15782
+A* solved,34005
+Depth solved,26270
+A* solved,38706
+A* solved g/4,44532
+A* solved g/2,44537
+Depth solved,37720
+A* solved g(n)=0,44401
+Breadth solved,20048
+Breadth solved,33048
+A* solved g(n)=0,48647
+Depth solved,38318
+A* solved g/2,48725
+A* solved g/4,48800
+A* solved,54775
+A* solved g/2,32530
+A* solved g/4,35831
+Depth solved,26549
+Breadth solved,23935
+A* solved,46425
+A* solved g(n)=0,35928
+A* solved,19996
+A* solved g/2,5847
+A* solved g(n)=0,5860
+A* solved g/4,5860
+Depth solved,5505
+Breadth solved,10661
+Depth solved,25800
+Breadth solved,14935
+A* solved g/4,22059
+A* solved g/2,22062
+A* solved g(n)=0,22086
+A* solved,27441
+A* solved g(n)=0,43636
+Depth solved,27148
+A* solved g/4,38518
+A* solved g/2,38498
+Breadth solved,21065
+A* solved,40539
+A* solved,20222
+A* solved g/4,9827
+A* solved g/2,9812
+Depth solved,8290
+A* solved g(n)=0,9725
+Breadth solved,7709
+Breadth solved,25701
+Depth solved,14762
+A* solved g(n)=0,25440
+A* solved,37735
+A* solved g/4,25383
+A* solved g/2,25431
+A* solved g/2,17281
+Breadth solved,11570
+A* solved g(n)=0,12090
+A* solved g/4,12095
+Depth solved,38067
+A* solved,20468
+Breadth solved,18743
+Depth solved,26216
+A* solved g/2,23434
+A* solved,24913
+A* solved g(n)=0,23354
+A* solved g/4,23350
+A* solved g/4,34731
+Depth solved,41977
+Breadth solved,21471
+A* solved g(n)=0,29535
+A* solved,42067
+A* solved g/2,29541
+A* solved g(n)=0,23823
+Depth solved,9943
+A* solved g/4,18619
+A* solved g/2,18636
+A* solved,45175
+Breadth solved,23389
+A* solved,58574
+Depth solved,22561
+A* solved g/4,37270
+Breadth solved,27221
+A* solved g(n)=0,37216
+A* solved g/2,37311
+A* solved g/4,37493
+A* solved,34564
+A* solved g(n)=0,32286
+Depth solved,45754
+A* solved g/2,32315
+Breadth solved,17682
+A* solved g/4,25647
+Depth solved,7687
+Breadth solved,14365
+A* solved g(n)=0,20373
+A* solved,27006
+A* solved g/2,20468
+Breadth solved,23180
+Depth solved,24028
+A* solved g(n)=0,14138
+A* solved,32364
+A* solved g/2,14162
+A* solved g/4,14139
+A* solved g/2,27049
+A* solved g(n)=0,21968
+Breadth solved,17624
+Depth solved,19919
+A* solved,31557
+A* solved g/4,22007
+Breadth solved,21744
+A* solved g/2,18600
+Depth solved,30094
+A* solved g(n)=0,18600
+A* solved,29031
+A* solved g/4,18638
+A* solved g/2,23061
+A* solved,43683
+A* solved g/4,17886
+Breadth solved,24249
+A* solved g(n)=0,17873
+Depth solved,24660
+A* solved,36174
+A* solved g(n)=0,21148
+A* solved g/4,21126
+Breadth solved,17604
+A* solved g/2,21133
+Depth solved,41325
+A* solved,57123
+A* solved g(n)=0,51452
+Breadth solved,27335
+A* solved g/4,51641
+Depth solved,35252
+A* solved g/2,51806
+A* solved,42759
+Depth solved,34390
+A* solved g/2,18802
+Breadth solved,19216
+A* solved g/4,18789
+A* solved g(n)=0,18760
+A* solved g(n)=0,51869
+Depth solved,32540
+A* solved g/4,45937
+Breadth solved,27409
+A* solved g/2,45948
+A* solved,53963
+Breadth solved,20351
+A* solved g(n)=0,25492
+A* solved g/2,25673
+A* solved g/4,25820
+A* solved,29015
+Depth solved,26289
+A* solved g(n)=0,34841
+A* solved,32089
+Breadth solved,17081
+A* solved g/4,29664
+Depth solved,35715
+A* solved g/2,29534
+Depth solved,48743
+A* solved g(n)=0,23245
+Breadth solved,25104
+A* solved g/4,23237
+A* solved,46563
+A* solved g/2,23259
+A* solved,35740
+A* solved g(n)=0,27511
+A* solved g/2,27540
+A* solved g/4,27502
+Depth solved,33908
+Breadth solved,16527
+A* solved,57020
+A* solved g(n)=0,35244
+A* solved g/4,35246
+A* solved g/2,35219
+Breadth solved,27278
+Depth solved,43563
+Depth solved,54954
+Breadth solved,19674
+A* solved g(n)=0,12289
+A* solved g/4,12313
+A* solved,35205
+A* solved g/2,12279
+A* solved,47717
+A* solved g/4,30924
+A* solved g(n)=0,30931
+A* solved g/2,30965
+Depth solved,37430
+Breadth solved,23129
+Depth solved,23861
+A* solved g(n)=0,19542
+A* solved g/4,19481
+A* solved,46368
+Breadth solved,25324
+A* solved g/2,19506
+Depth solved,49138
+A* solved,35089
+A* solved g/4,35618
+Breadth solved,21565
+A* solved g/2,35643
+A* solved g(n)=0,35685
+Breadth solved,33436
+A* solved,54251
+A* solved g/4,26558
+A* solved g/2,26714
+Depth solved,35292
+A* solved g(n)=0,26573
+Breadth solved,29908
+A* solved,47800
+A* solved g(n)=0,37644
+A* solved g/4,37641
+A* solved g/2,37555
+Depth solved,34106
+Breadth solved,25283
+A* solved g/2,39094
+A* solved,38817
+Depth solved,39257
+A* solved g/4,39210
+A* solved g(n)=0,39278
+A* solved g/2,28619
+A* solved g(n)=0,23408
+A* solved,31159
+Depth solved,33494
+A* solved g/4,23318
+Breadth solved,16484
+A* solved g/2,31669
+Depth solved,21026
+A* solved g(n)=0,26359
+A* solved g/4,26431
+Breadth solved,27196
+A* solved,51988
+A* solved,40422
+A* solved g/4,34328
+A* solved g(n)=0,34449
+Depth solved,9805
+Breadth solved,18382
+A* solved g/2,34478
+A* solved g(n)=0,25114
+A* solved,45034
+A* solved g/2,19902
+A* solved g/4,19882
+Depth solved,39962
+Breadth solved,23482
+Depth solved,48907
+A* solved g/4,30812
+A* solved g(n)=0,30867
+A* solved g/2,30872
+A* solved,55436
+Breadth solved,28313
+Breadth solved,29523
+A* solved g(n)=0,34539
+Depth solved,39715
+A* solved g/2,34529
+A* solved g/4,34500
+A* solved,44883
+A* solved g/2,42389
+A* solved g/4,37175
+Depth solved,19414
+A* solved,54664
+A* solved g(n)=0,37098
+Breadth solved,27817
+A* solved g(n)=0,45103
+A* solved,41109
+A* solved g/4,39911
+Depth solved,8829
+Breadth solved,21151
+A* solved g/2,39865
+A* solved,50056
+A* solved g/2,25417
+Breadth solved,22729
+Depth solved,18652
+A* solved g/4,25359
+A* solved g(n)=0,25384
+A* solved g(n)=0,15652
+A* solved,35333
+Breadth solved,19111
+Depth solved,20837
+A* solved g/2,10462
+A* solved g/4,10427
+Depth solved,26226
+A* solved,42996
+A* solved g(n)=0,38547
+A* solved g/4,38532
+A* solved g/2,38618
+Breadth solved,22220
+A* solved g(n)=0,30702
+Depth solved,7542
+A* solved,25135
+A* solved g/4,25532
+Breadth solved,13222
+A* solved g/2,25490
+Depth solved,15879
+A* solved,34313
+Breadth solved,18771
+A* solved g/4,17749
+A* solved g(n)=0,17762
+A* solved g/2,17734
+A* solved g/4,35859
+A* solved,51702
+Breadth solved,26489
+Depth solved,35537
+A* solved g/2,30658
+A* solved g(n)=0,30605
+Depth solved,37789
+Breadth solved,20430
+A* solved,39431
+A* solved g(n)=0,36005
+A* solved g/2,36003
+A* solved g/4,36075
+A* solved g(n)=0,52459
+A* solved,54478
+A* solved g/2,47307
+Depth solved,19634
+Breadth solved,27780
+A* solved g/4,47334
+A* solved,42937
+Depth solved,28596
+A* solved g(n)=0,30967
+A* solved g/2,30806
+A* solved g/4,30929
+Breadth solved,19677
+A* solved g(n)=0,29427
+Depth solved,23063
+A* solved g/2,24317
+A* solved,49013
+Breadth solved,25260
+A* solved g/4,24320
+Depth solved,55559
+A* solved,27583
+A* solved g/4,51430
+A* solved g(n)=0,16194
+A* solved g/2,51281
+Breadth solved,16738
+Depth solved,13284
+A* solved g/4,50696
+A* solved g(n)=0,50825
+A* solved,37651
+A* solved g/2,50781
+Breadth solved,21053
+Depth solved,53025
+Breadth solved,16269
+A* solved g/4,38247
+A* solved g/2,38720
+A* solved,26811
+A* solved g(n)=0,38287
+Depth solved,34038
+A* solved g/2,36370
+A* solved g(n)=0,36415
+A* solved g/4,36302
+Breadth solved,18684
+A* solved,32729
+Depth solved,36617
+A* solved g/2,38067
+Breadth solved,21687
+A* solved,41112
+A* solved g/4,38023
+A* solved g(n)=0,37536
+A* solved g/2,25468
+Breadth solved,14440
+A* solved g/4,19785
+A* solved,21136
+A* solved g(n)=0,6784
+Depth solved,17516
+Depth solved,48620
+A* solved,45324
+A* solved g/2,42431
+A* solved g(n)=0,42357
+A* solved g/4,41894
+Breadth solved,25006
+A* solved g/4,16357
+A* solved g/2,11244
+A* solved,29874
+A* solved g(n)=0,11343
+Depth solved,29562
+Breadth solved,15881
+Depth solved,20366
+A* solved g/2,29836
+A* solved g(n)=0,29981
+A* solved,40377
+A* solved g/4,30151
+Breadth solved,21358
+A* solved g/4,14974
+A* solved,24393
+A* solved g/2,9757
+Breadth solved,14913
+A* solved g(n)=0,9817
+Depth solved,24120
+A* solved g/2,16510
+Breadth solved,22935
+Depth solved,46248
+A* solved,42902
+A* solved g(n)=0,11266
+A* solved g/4,11423
+Depth solved,44577
+A* solved g/2,48500
+A* solved g/4,48599
+Breadth solved,25534
+A* solved g(n)=0,48678
+A* solved,43731
+A* solved g/4,39356
+A* solved g(n)=0,34749
+A* solved,43177
+Breadth solved,22770
+A* solved g/2,34828
+Depth solved,32232
+A* solved g/2,41886
+A* solved g(n)=0,36768
+A* solved,48305
+Depth solved,32898
+A* solved g/4,36754
+Breadth solved,25491
+A* solved g/4,32882
+A* solved,34159
+Depth solved,19999
+A* solved g(n)=0,27683
+A* solved g/2,27361
+Breadth solved,17192
+A* solved,50236
+A* solved g/2,36290
+Depth solved,25024
+A* solved g(n)=0,36136
+Breadth solved,25718
+A* solved g/4,36011
+Breadth solved,32723
+A* solved g/2,24341
+A* solved,54410
+A* solved g/4,24443
+A* solved g(n)=0,24239
+Depth solved,42607
+A* solved g/4,44303
+Depth solved,29359
+A* solved,39374
+A* solved g/2,38865
+Breadth solved,22684
+A* solved g(n)=0,39391
+A* solved g/2,33060
+A* solved,29214
+Breadth solved,14774
+A* solved g(n)=0,28046
+A* solved g/4,28063
+Depth solved,36021
+A* solved,55528
+Depth solved,24869
+Breadth solved,25648
+A* solved g/4,37532
+A* solved g/2,37273
+A* solved g(n)=0,37445
+Breadth solved,29659
+A* solved,47481
+A* solved g/4,46498
+A* solved g/2,46112
+A* solved g(n)=0,46518
+Depth solved,18721
+A* solved,31273
+Depth solved,9364
+A* solved g/2,15091
+A* solved g(n)=0,14858
+A* solved g/4,14963
+Breadth solved,15124
+Depth solved,33897
+Breadth solved,13310
+A* solved,17460
+A* solved g/2,13291
+A* solved g(n)=0,13715
+A* solved g/4,13835
+Depth solved,29686
+A* solved g/4,23288
+Breadth solved,19475
+A* solved g(n)=0,23494
+A* solved g/2,23603
+A* solved,37998
+A* solved g(n)=0,17531
+A* solved g/2,12503
+A* solved,24885
+Depth solved,16051
+Breadth solved,14495
+A* solved g/4,12563
+A* solved g(n)=0,31742
+A* solved,44492
+Depth solved,28128
+A* solved g/4,26086
+Breadth solved,23321
+A* solved g/2,26436
+A* solved,50645
+A* solved g/4,28771
+Depth solved,37074
+A* solved g(n)=0,28583
+A* solved g/2,28599
+Breadth solved,24579
+A* solved,39509
+Depth solved,44332
+A* solved g/4,22253
+A* solved g/2,22380
+Breadth solved,17422
+A* solved g(n)=0,22368
+Breadth solved,24674
+A* solved g(n)=0,30035
+A* solved g/4,30212
+A* solved g/2,30336
+A* solved,35956
+Depth solved,26007
+A* solved g/2,56369
+A* solved g(n)=0,50845
+A* solved g/4,50897
+Breadth solved,26179
+A* solved,51269
+Depth solved,26019
+Depth solved,28669
+A* solved,38267
+A* solved g(n)=0,30494
+Breadth solved,19503
+A* solved g/2,30346
+A* solved g/4,30608
+A* solved g/2,25397
+A* solved,45353
+Breadth solved,24511
+A* solved g/4,20129
+Depth solved,40415
+A* solved g(n)=0,19947
+A* solved,30521
+A* solved g/4,21439
+Breadth solved,13119
+A* solved g(n)=0,21355
+A* solved g/2,21457
+Depth solved,42471
+Depth solved,41814
+A* solved g(n)=0,32648
+A* solved,34872
+Breadth solved,17704
+A* solved g/4,32976
+A* solved g/2,32961
+Breadth solved,23100
+Depth solved,30465
+A* solved g/4,11871
+A* solved g(n)=0,12603
+A* solved g/2,12489
+A* solved,32775
+Breadth solved,33114
+Depth solved,25936
+A* solved g/2,19102
+A* solved g(n)=0,19105
+A* solved g/4,19237
+A* solved,53105
+A* solved g/4,44721
+A* solved g(n)=0,39300
+Breadth solved,23229
+Depth solved,46579
+A* solved g/2,39178
+A* solved,38437
+Depth solved,26885
+A* solved g(n)=0,17887
+A* solved g/4,18061
+Breadth solved,20786
+A* solved,40428
+A* solved g/2,18028
+A* solved g(n)=0,30156
+Depth solved,27781
+Breadth solved,18558
+A* solved g/4,24877
+A* solved g/2,24721
+A* solved,37850
+A* solved g/2,26895
+A* solved,25216
+A* solved g(n)=0,21817
+Breadth solved,12693
+Depth solved,46223
+A* solved g/4,21839
+Breadth solved,27650
+A* solved,42048
+A* solved g(n)=0,50365
+A* solved g/4,50971
+A* solved g/2,50237
+Depth solved,14393
+Depth solved,47311
+A* solved g(n)=0,20159
+A* solved g/2,20183
+A* solved,45140
+Breadth solved,24585
+A* solved g/4,19650
+A* solved,47548
+A* solved g/4,17445
+A* solved g(n)=0,17481
+Depth solved,12274
+Breadth solved,22171
+A* solved g/2,17584
+Depth solved,29712
+A* solved g/4,36491
+A* solved g/2,36581
+A* solved,36259
+Breadth solved,19312
+A* solved g(n)=0,36590
+Depth solved,18340
+A* solved,32363
+A* solved g/2,19687
+Breadth solved,17824
+A* solved g(n)=0,19658
+A* solved g/4,19669
+A* solved g/4,40557
+A* solved g/2,34950
+Breadth solved,20854
+Depth solved,28610
+A* solved,40254
+A* solved g(n)=0,35063
+A* solved g/4,29331
+Breadth solved,27866
+A* solved,53986
+Depth solved,11119
+A* solved g(n)=0,23670
+A* solved g/2,24221
+A* solved g/2,14853
+A* solved g/4,9587
+Depth solved,12650
+A* solved,23783
+Breadth solved,13689
+A* solved g(n)=0,34565
+Breadth solved,19075
+A* solved,26796
+A* solved g/2,26224
+A* solved g/4,26130
+A* solved g(n)=0,26073
+Depth solved,9496
+A* solved g/2,24095
+A* solved g(n)=0,18699
+A* solved,29367
+Depth solved,14060
+A* solved g/4,18766
+Breadth solved,15911
+Depth solved,15550
+A* solved g(n)=0,17840
+A* solved,53166
+A* solved g/4,17769
+A* solved g/2,17686
+Breadth solved,27406
+Depth solved,36839
+Breadth solved,21340
+A* solved g/2,11258
+A* solved g/4,11418
+A* solved,39335
+A* solved g(n)=0,11473
+A* solved g/4,45273
+A* solved g/2,39339
+A* solved,50899
+Breadth solved,26858
+A* solved g(n)=0,39866
+Depth solved,25345
+A* solved g/2,37211
+A* solved,40157
+A* solved g(n)=0,31924
+A* solved g/4,32321
+Depth solved,37755
+Breadth solved,20546
+A* solved g(n)=0,26817
+Depth solved,31361
+A* solved g/2,21246
+Breadth solved,19824
+A* solved g/4,21596
+A* solved,36672
+A* solved g(n)=0,22330
+A* solved,21140
+Breadth solved,11139
+Depth solved,11267
+A* solved g/2,16966
+A* solved g/4,17069
+Breadth solved,27959
+A* solved g/2,15183
+A* solved,43560
+Depth solved,40511
+A* solved g/4,15263
+A* solved g(n)=0,15150
+A* solved,42274
+Breadth solved,19573
+Depth solved,36115
+A* solved g(n)=0,14883
+A* solved g/4,14968
+A* solved g/2,14934
+A* solved,60370
+Breadth solved,27997
+A* solved g(n)=0,54965
+A* solved g/4,55027
+Depth solved,22334
+A* solved g/2,52250
+A* solved g/4,30958
+A* solved,41820
+A* solved g(n)=0,24287
+Depth solved,38607
+A* solved g/2,25787
+Breadth solved,26721
+A* solved g(n)=0,40394
+A* solved,46766
+Breadth solved,24940
+Depth solved,20523
+A* solved g/2,34310
+A* solved g/4,34573
+A* solved g/4,37560
+A* solved,47285
+Breadth solved,25163
+A* solved g/2,32282
+Depth solved,22379
+A* solved g(n)=0,32352
+A* solved g(n)=0,18956
+A* solved g/4,13495
+Depth solved,14757
+A* solved,27253
+Breadth solved,15427
+A* solved g/2,13902
+A* solved g/2,37529
+Depth solved,31589
+A* solved g/4,32533
+A* solved,45655
+Breadth solved,24323
+A* solved g(n)=0,32143
+Breadth solved,32224
+A* solved g/4,52963
+A* solved g(n)=0,52665
+Depth solved,29685
+A* solved g/2,52608
+A* solved,53368
+A* solved g/2,16914
+A* solved g(n)=0,11711
+A* solved g/4,11849
+Breadth solved,13678
+Depth solved,15918
+A* solved,25383
+A* solved g/2,16774
+A* solved,25568
+A* solved g/4,11611
+Depth solved,15282
+Breadth solved,15610
+A* solved g(n)=0,11667
+A* solved g/4,30706
+A* solved g/2,25437
+Depth solved,42410
+A* solved g(n)=0,25412
+Breadth solved,15190
+A* solved,24744
+A* solved,48189
+Depth solved,18416
+A* solved g/4,39531
+A* solved g(n)=0,39945
+Breadth solved,22231
+A* solved g/2,39648
+Breadth solved,27181
+A* solved,42729
+Depth solved,22334
+A* solved g/2,12604
+A* solved g(n)=0,12702
+A* solved g/4,12938
+A* solved g/2,35098
+Breadth solved,26117
+A* solved,51912
+A* solved g(n)=0,29758
+Depth solved,32747
+A* solved g/4,29924
+A* solved g/4,44536
+A* solved g/2,38659
+A* solved g(n)=0,38994
+Depth solved,22490
+Breadth solved,24507
+A* solved,44515
+A* solved g/2,22773
+Depth solved,44612
+A* solved g/4,17402
+A* solved,52476
+A* solved g(n)=0,17339
+Breadth solved,26527
+A* solved,19618
+Depth solved,11865
+A* solved g(n)=0,8728
+A* solved g/2,9416
+A* solved g/4,8847
+Breadth solved,8575
+A* solved,38081
+Depth solved,43411
+A* solved g(n)=0,23535
+A* solved g/2,23820
+Breadth solved,16548
+A* solved g/4,23920
+Breadth solved,29725
+A* solved,44298
+A* solved g/2,18850
+A* solved g(n)=0,18785
+A* solved g/4,18987
+Depth solved,7318
+Breadth solved,25313
+A* solved,35074
+A* solved g(n)=0,15917
+A* solved g/4,15719
+A* solved g/2,15770
+Depth solved,8383
+A* solved g/2,28237
+A* solved g(n)=0,22759
+Breadth solved,22567
+A* solved g/4,23139
+Depth solved,29969
+A* solved,40004
+A* solved g/2,18071
+A* solved g/4,12765
+A* solved g(n)=0,12798
+Depth solved,36364
+A* solved,18045
+Breadth solved,11185
+A* solved g/2,19887
+A* solved,46675
+Depth solved,40950
+A* solved g(n)=0,14650
+Breadth solved,25943
+A* solved g/4,14947
+A* solved g(n)=0,24360
+A* solved g/2,19506
+Depth solved,21292
+A* solved,33639
+A* solved g/4,19530
+Breadth solved,17375
+A* solved g/2,53832
+Breadth solved,25101
+A* solved,50050
+A* solved g/4,48628
+Depth solved,17380
+A* solved g(n)=0,48842
+A* solved g/4,25561
+Depth solved,38521
+A* solved g/2,20298
+A* solved,33704
+A* solved g(n)=0,20163
+Breadth solved,17500
+Depth solved,47615
+A* solved g/4,18245
+A* solved g/2,18283
+Breadth solved,13339
+A* solved g(n)=0,18353
+A* solved,23908
+Breadth solved,28595
+A* solved,45669
+A* solved g(n)=0,42655
+Depth solved,38792
+A* solved g/2,42337
+A* solved g/4,42494
+Breadth solved,33180
+Depth solved,38102
+A* solved g(n)=0,37955
+A* solved g/2,38119
+A* solved,55107
+A* solved g/4,38065
+A* solved,59094
+Breadth solved,27614
+A* solved g/4,43445
+A* solved g/2,43481
+A* solved g(n)=0,43569
+Depth solved,29899
+A* solved,37892
+A* solved g(n)=0,31379
+Breadth solved,17082
+A* solved g/2,31693
+Depth solved,22056
+A* solved g/4,31568
+A* solved,48340
+A* solved g(n)=0,19665
+A* solved g/4,19586
+Breadth solved,22617
+A* solved g/2,19775
+Depth solved,30909
+A* solved g(n)=0,30315
+A* solved,38830
+A* solved g/2,24686
+Depth solved,34071
+A* solved g/4,25026
+Breadth solved,19799
+A* solved g/2,48015
+Breadth solved,25644
+A* solved,47901
+A* solved g/4,42760
+A* solved g(n)=0,42958
+Depth solved,44243
+A* solved g/4,29889
+A* solved g/2,24540
+Breadth solved,18247
+A* solved,35594
+A* solved g(n)=0,24199
+Depth solved,33804
+A* solved g(n)=0,20304
+Breadth solved,23496
+A* solved,43337
+A* solved g/2,15005
+A* solved g/4,14910
+Depth solved,42349
+Depth solved,16978
+Breadth solved,12681
+A* solved g/4,16706
+A* solved g(n)=0,16508
+A* solved g/2,16537
+A* solved,21526
+A* solved g(n)=0,39971
+Breadth solved,26094
+A* solved g/4,34962
+A* solved g/2,34564
+Depth solved,37489
+A* solved,50953
+A* solved g/2,42523
+A* solved g/4,36681
+A* solved g(n)=0,37076
+Depth solved,42876
+A* solved,53860
+Breadth solved,27139
+A* solved,42687
+A* solved g/4,30519
+A* solved g(n)=0,30332
+Breadth solved,20064
+A* solved g/2,30269
+Depth solved,27881
+A* solved g/4,27972
+A* solved g(n)=0,22894
+Breadth solved,25790
+A* solved g/2,22843
+A* solved,50503
+Depth solved,15696
+Depth solved,19979
+A* solved g/2,42206
+A* solved g(n)=0,41649
+Breadth solved,25743
+A* solved,49469
+A* solved g/4,42075
+A* solved g/4,38073
+A* solved g/2,32675
+A* solved,45782
+A* solved g(n)=0,32040
+Breadth solved,23283
+Depth solved,27110
+A* solved g/4,55889
+Depth solved,25159
+A* solved g/2,50374
+A* solved,50634
+Breadth solved,25591
+A* solved g(n)=0,50282
+A* solved g(n)=0,18919
+Breadth solved,10047
+Depth solved,8268
+A* solved,17834
+A* solved g/4,13632
+A* solved g/2,13647
+A* solved g/4,49415
+Breadth solved,21055
+Depth solved,17147
+A* solved,35039
+A* solved g(n)=0,44214
+A* solved g/2,44082
+Depth solved,30107
+A* solved g(n)=0,49006
+A* solved,53892
+A* solved g/2,49554
+Breadth solved,27116
+A* solved g/4,49597
+A* solved,55211
+Breadth solved,25736
+A* solved g/2,44502
+A* solved g/4,45071
+Depth solved,27590
+A* solved g(n)=0,45043
+A* solved g/2,54384
+A* solved g(n)=0,49152
+A* solved,45545
+Breadth solved,24698
+A* solved g/4,49392
+Depth solved,16607
+Breadth solved,28184
+A* solved g/4,23023
+A* solved g/2,23103
+A* solved g(n)=0,23037
+A* solved,41826
+Depth solved,23034
+A* solved g/2,32480
+A* solved,44438
+Breadth solved,23948
+Depth solved,41002
+A* solved g(n)=0,26845
+A* solved g/4,26729
+A* solved g(n)=0,30613
+A* solved g/2,25500
+A* solved,37429
+Breadth solved,19969
+A* solved g/4,25697
+Depth solved,31762
+A* solved,44597
+A* solved g/2,28505
+A* solved g(n)=0,28657
+Depth solved,30765
+A* solved g/4,28565
+Breadth solved,21743
+A* solved,33933
+A* solved g/2,13048
+A* solved g(n)=0,12809
+A* solved g/4,12772
+Breadth solved,14703
+Depth solved,16728
+A* solved g/4,27530
+A* solved g(n)=0,21530
+Depth solved,27500
+Breadth solved,13422
+A* solved,24830
+A* solved g/2,22225
+Breadth solved,21094
+A* solved,30349
+Depth solved,39025
+A* solved g/2,17810
+A* solved g/4,18027
+A* solved g(n)=0,17748
+Breadth solved,29409
+A* solved,47303
+A* solved g/2,40435
+A* solved g(n)=0,40562
+A* solved g/4,40468
+Depth solved,19162
+A* solved g(n)=0,39511
+A* solved,38591
+A* solved g/2,34419
+Depth solved,46959
+Breadth solved,23836
+A* solved g/4,34427
+Depth solved,28281
+Breadth solved,18691
+A* solved g(n)=0,29830
+A* solved g/4,29699
+A* solved g/2,29616
+A* solved,36420
+Depth solved,32908
+Breadth solved,24174
+A* solved,46965
+A* solved g(n)=0,39249
+A* solved g/2,39740
+A* solved g/4,39725
+A* solved,44264
+Depth solved,19848
+A* solved g(n)=0,10917
+Breadth solved,21130
+A* solved g/4,10825
+A* solved g/2,10998
+A* solved,56472
+Depth solved,21081
+A* solved g/4,42324
+A* solved g/2,42020
+A* solved g(n)=0,42260
+Breadth solved,27280
+Breadth solved,22197
+A* solved g(n)=0,13365
+Depth solved,30945
+A* solved g/2,13440
+A* solved g/4,13336
+A* solved,29700
+A* solved g/4,23359
+A* solved,49711
+Breadth solved,25628
+A* solved g(n)=0,18074
+A* solved g/2,18111
+Depth solved,42731
+A* solved,52579
+Breadth solved,25264
+A* solved g(n)=0,13904
+A* solved g/2,13979
+Depth solved,36405
+A* solved g/4,14085
+Depth solved,26564
+Breadth solved,24010
+A* solved g(n)=0,42470
+A* solved,47495
+A* solved g/2,42452
+A* solved g/4,42655
+Breadth solved,17000
+A* solved g/2,14119
+A* solved g(n)=0,11467
+A* solved g/4,14170
+Depth solved,36589
+A* solved,22397
+Depth solved,22403
+A* solved g/2,41797
+Breadth solved,25025
+A* solved,47936
+A* solved g(n)=0,41657
+A* solved g/4,41555
+A* solved g(n)=0,55824
+A* solved g/2,50756
+Breadth solved,26370
+Depth solved,32216
+A* solved g/4,50576
+A* solved,50345
+Depth solved,21544
+A* solved g/4,31800
+A* solved g/2,31778
+A* solved,37284
+A* solved g(n)=0,31608
+Breadth solved,18785
+Depth solved,35012
+A* solved,49161
+A* solved g/2,36393
+A* solved g(n)=0,36460
+A* solved g/4,36407
+Breadth solved,26820
+A* solved g/4,27660
+Depth solved,34284
+Breadth solved,21486
+A* solved,38443
+A* solved g(n)=0,22241
+A* solved g/2,22465
+A* solved g/4,27523
+A* solved,40202
+Breadth solved,20612
+A* solved g/2,22599
+Depth solved,22255
+A* solved g(n)=0,22542
+Breadth solved,26605
+A* solved g(n)=0,24603
+A* solved,39622
+A* solved g/2,24402
+Depth solved,45087
+A* solved g/4,24583
+A* solved g/4,26639
+A* solved,41770
+Depth solved,10951
+Breadth solved,23868
+A* solved g/2,21490
+A* solved g(n)=0,21225
+A* solved,38373
+A* solved g(n)=0,13146
+Depth solved,23369
+A* solved g/4,13247
+Breadth solved,17020
+A* solved g/2,13005
+Breadth solved,19278
+Depth solved,17870
+A* solved g/2,26563
+A* solved,27319
+A* solved g/4,26278
+A* solved g(n)=0,26546
+Depth solved,31344
+A* solved g/4,44628
+A* solved,50740
+A* solved g/2,44824
+Breadth solved,25757
+A* solved g(n)=0,43912
+A* solved,29170
+A* solved g(n)=0,19587
+A* solved g/4,20012
+A* solved g/2,19939
+Depth solved,40254
+Breadth solved,14845
+A* solved g/2,22820
+Breadth solved,24562
+A* solved g/4,17454
+A* solved,47708
+A* solved g(n)=0,17620
+Depth solved,7477
+Depth solved,53552
+Breadth solved,17535
+A* solved g(n)=0,23652
+A* solved g/4,23736
+A* solved,33574
+A* solved g/2,23536
+A* solved g/4,44362
+Depth solved,31993
+A* solved,51261
+A* solved g/2,39497
+Breadth solved,26269
+A* solved g(n)=0,39602
+A* solved g/2,44954
+Breadth solved,23898
+A* solved g/4,39953
+Depth solved,29674
+A* solved g(n)=0,39724
+A* solved,46739
+Depth solved,31748
+A* solved g/2,34837
+Breadth solved,23542
+A* solved,45103
+A* solved g/4,34562
+A* solved g(n)=0,34281
+Depth solved,16133
+A* solved,27982
+Breadth solved,15728
+A* solved g(n)=0,48555
+A* solved g/4,48937
+A* solved g/2,48867
+Depth solved,38892
+A* solved g(n)=0,34447
+Breadth solved,20684
+A* solved g/2,34431
+A* solved g/4,34658
+A* solved,40221
+Breadth solved,30597
+A* solved g(n)=0,37017
+A* solved g/4,36758
+A* solved g/2,36464
+Depth solved,24186
+A* solved,47385
+Breadth solved,18942
+A* solved g(n)=0,26444
+A* solved g/2,26452
+A* solved,27243
+A* solved g/4,26719
+Depth solved,12157
+A* solved g/2,31866
+A* solved g/4,26622
+Depth solved,27602
+A* solved g(n)=0,26615
+A* solved,43569
+Breadth solved,24287
+A* solved g/4,21350
+A* solved g/2,16251
+A* solved,46307
+Breadth solved,24654
+A* solved g(n)=0,16207
+Depth solved,39665
+Depth solved,41943
+Breadth solved,25466
+A* solved g(n)=0,45661
+A* solved g/4,46231
+A* solved g/2,46279
+A* solved,48536
+Depth solved,28322
+A* solved g/2,33580
+A* solved,48943
+Breadth solved,26711
+A* solved g(n)=0,33704
+A* solved g/4,33599
+Depth solved,34040
+A* solved g(n)=0,37470
+A* solved g/2,37509
+Breadth solved,19675
+A* solved,38913
+A* solved g/4,37476
+Depth solved,51379
+A* solved g/2,15005
+A* solved g(n)=0,14912
+A* solved g/4,14854
+A* solved,42262
+Breadth solved,22615
+A* solved g/2,47832
+A* solved g/4,42559
+A* solved,44561
+Depth solved,36264
+A* solved g(n)=0,42940
+Breadth solved,23311
+A* solved g(n)=0,42408
+Depth solved,30538
+A* solved g/4,37565
+A* solved g/2,37324
+Breadth solved,19813
+A* solved,36740
+Depth solved,31734
+A* solved g/4,29779
+Breadth solved,24543
+A* solved,46366
+A* solved g(n)=0,29681
+A* solved g/2,29740
+A* solved g/4,29802
+A* solved,47516
+Breadth solved,25471
+A* solved g(n)=0,24582
+Depth solved,30249
+A* solved g/2,24693
+A* solved g/2,24017
+Breadth solved,24964
+A* solved g(n)=0,18737
+Depth solved,31875
+A* solved g/4,18741
+A* solved,47434
+A* solved g/2,29606
+A* solved g(n)=0,24293
+Breadth solved,23677
+A* solved,45953
+A* solved g/4,24502
+Depth solved,15098
+A* solved g/4,34781
+A* solved,41250
+A* solved g/2,29772
+Depth solved,40232
+A* solved g(n)=0,29636
+Breadth solved,22838
+Breadth solved,26127
+A* solved g/4,31726
+A* solved,39274
+A* solved g/2,31770
+A* solved g(n)=0,31591
+Depth solved,36034
+A* solved g(n)=0,42375
+A* solved g/2,37289
+A* solved g/4,37181
+Depth solved,22227
+Breadth solved,23881
+A* solved,46088
+A* solved g/2,43440
+Breadth solved,19471
+A* solved,38541
+A* solved g(n)=0,21324
+Depth solved,40935
+A* solved g/4,38304
+Breadth solved,21106
+Depth solved,12917
+A* solved,25245
+A* solved g/2,15484
+A* solved g/4,15400
+A* solved g(n)=0,15278
+A* solved g/2,33503
+A* solved,29820
+Depth solved,15549
+Breadth solved,15927
+A* solved g/4,28236
+A* solved g(n)=0,27943
+Breadth solved,19093
+A* solved,26617
+A* solved g/4,20067
+A* solved g/2,20168
+A* solved g(n)=0,19921
+Depth solved,12899
+A* solved g/2,25283
+A* solved g/4,20158
+A* solved,48277
+A* solved g(n)=0,20224
+Breadth solved,24800
+Depth solved,47112
+A* solved g/4,46150
+A* solved,40928
+Breadth solved,20655
+A* solved g/2,40802
+A* solved g(n)=0,33110
+Depth solved,24883
+A* solved g/2,27734
+Breadth solved,14726
+A* solved g/4,22317
+Depth solved,47369
+A* solved,28717
+A* solved g(n)=0,22338
+Breadth solved,27365
+Depth solved,24934
+A* solved,40774
+A* solved g/2,32836
+A* solved g/4,32497
+A* solved g(n)=0,32676
+A* solved g/4,27925
+A* solved g(n)=0,22728
+A* solved g/2,22494
+A* solved,31057
+Breadth solved,16179
+Depth solved,39385
+Breadth solved,28837
+A* solved g/4,18570
+A* solved,45806
+Depth solved,23226
+A* solved g(n)=0,18424
+A* solved g/2,18588
+Breadth solved,20819
+A* solved,27997
+A* solved g(n)=0,9940
+A* solved g/4,10000
+A* solved g/2,10007
+Depth solved,6782
+A* solved g(n)=0,43113
+Depth solved,34956
+Breadth solved,18916
+A* solved g/4,12756
+A* solved g/2,12634
+A* solved,35684
+A* solved g/4,21358
+A* solved g/2,16152
+A* solved,37315
+Breadth solved,19534
+A* solved g(n)=0,15747
+Depth solved,36400
+Breadth solved,25458
+A* solved g(n)=0,26243
+A* solved g/4,26086
+Depth solved,47366
+A* solved g/2,26313
+A* solved,36149
+A* solved g/2,32817
+Breadth solved,19362
+A* solved g/4,27244
+Depth solved,10517
+A* solved,38952
+A* solved g(n)=0,27574
+Breadth solved,28099
+A* solved,44600
+Depth solved,30804
+A* solved g/4,36533
+A* solved g(n)=0,36417
+A* solved g/2,36375
+A* solved g/4,48022
+A* solved g(n)=0,42772
+A* solved g/2,42864
+A* solved,45126
+Depth solved,15721
+Breadth solved,22994
+Depth solved,19820
+A* solved g/2,16800
+A* solved,33380
+Breadth solved,18273
+A* solved g(n)=0,16672
+A* solved g/4,16629
+Depth solved,22396
+Breadth solved,16044
+A* solved g/4,41247
+A* solved g/2,41329
+A* solved g(n)=0,41411
+A* solved,24483
+Breadth solved,24492
+A* solved g(n)=0,20023
+A* solved g/4,20077
+Depth solved,28891
+A* solved,33997
+A* solved g/2,19582
+Depth solved,14323
+Breadth solved,15339
+A* solved,25960
+A* solved g(n)=0,21396
+A* solved g/2,21333
+A* solved g/4,21264
+A* solved,49401
+Depth solved,14283
+A* solved g(n)=0,35023
+A* solved g/4,35300
+Breadth solved,22542
+A* solved g/2,35580
+A* solved g(n)=0,44799
+A* solved g/4,39356
+Depth solved,29799
+Breadth solved,23000
+A* solved g/2,39812
+A* solved,43516
+Depth solved,41175
+Breadth solved,27612
+A* solved,53622
+A* solved g(n)=0,32520
+A* solved g/4,32418
+A* solved g/2,32544
+Depth solved,31026
+A* solved,53128
+Breadth solved,26966
+A* solved g/4,48871
+A* solved g/2,48761
+A* solved g(n)=0,49160
+Depth solved,14779
+A* solved g(n)=0,48043
+A* solved g/2,48166
+Breadth solved,25450
+A* solved,48174
+A* solved g/4,48276
+A* solved g/4,56670
+A* solved,48188
+Breadth solved,27361
+Depth solved,17040
+A* solved g(n)=0,51251
+A* solved g/2,51541
+A* solved g/4,18924
+A* solved g/2,13579
+A* solved g(n)=0,13732
+Breadth solved,16462
+Depth solved,14505
+A* solved,31825
+Depth solved,46837
+A* solved,30452
+A* solved g(n)=0,20586
+A* solved g/4,20664
+A* solved g/2,20841
+Breadth solved,16430
+A* solved,37015
+Depth solved,27963
+A* solved g(n)=0,18078
+Breadth solved,17524
+A* solved g/4,17934
+A* solved g/2,18018
+Breadth solved,22586
+A* solved,30733
+A* solved g(n)=0,19938
+Depth solved,46211
+A* solved g/2,19420
+A* solved g/4,19980
+Breadth solved,33334
+A* solved g/4,26506
+A* solved g/2,26389
+A* solved g(n)=0,26368
+A* solved,54869
+Depth solved,14891
+A* solved g(n)=0,23641
+A* solved g/2,18273
+A* solved g/4,18487
+Breadth solved,27535
+A* solved,50818
+Depth solved,23611
+A* solved g/4,47399
+A* solved,49629
+Depth solved,27602
+Breadth solved,25457
+A* solved g/2,41807
+A* solved g(n)=0,41928
+A* solved g/2,13833
+Breadth solved,15999
+Depth solved,12371
+A* solved g/4,8561
+A* solved,28515
+A* solved g(n)=0,8580
+A* solved g(n)=0,49691
+Breadth solved,22829
+Depth solved,8556
+A* solved g/4,44740
+A* solved,41554
+A* solved g/2,44652
+A* solved,57296
+Depth solved,24070
+A* solved g(n)=0,33165
+A* solved g/4,33109
+A* solved g/2,33371
+Breadth solved,27158
+Breadth solved,23463
+A* solved g(n)=0,27246
+Depth solved,21485
+A* solved,35208
+A* solved g/4,27033
+A* solved g/2,27394
+A* solved g(n)=0,27923
+A* solved g/4,23023
+Breadth solved,27213
+A* solved,51394
+A* solved g/2,23146
+Depth solved,10840
+A* solved g(n)=0,29861
+Breadth solved,18764
+Depth solved,12158
+A* solved g/4,24518
+A* solved,34229
+A* solved g/2,24765
+A* solved g/2,43394
+A* solved,38941
+A* solved g/4,38268
+Breadth solved,19713
+Depth solved,20505
+A* solved g(n)=0,38188
+Breadth solved,26166
+A* solved g(n)=0,30682
+A* solved g/4,30785
+A* solved,40639
+A* solved g/2,36655
+Depth solved,41660
+A* solved g/4,51699
+A* solved,48408
+Breadth solved,25167
+A* solved g(n)=0,46346
+Depth solved,13211
+A* solved g/2,45853
+A* solved,49545
+Breadth solved,22361
+Depth solved,31673
+A* solved g/4,30269
+A* solved g/2,30247
+A* solved g(n)=0,29907
+A* solved g(n)=0,40467
+A* solved g/4,35627
+A* solved g/2,35625
+A* solved,51336
+Breadth solved,25853
+Depth solved,29900
+Breadth solved,29152
+A* solved g(n)=0,20559
+A* solved,40965
+Depth solved,16750
+A* solved g/2,20604
+A* solved g/4,20408
+A* solved,26866
+A* solved g/4,13567
+A* solved g(n)=0,13457
+A* solved g/2,13552
+Breadth solved,11177
+Depth solved,39795
+A* solved,44701
+A* solved g/4,24115
+Breadth solved,20138
+A* solved g/2,23786
+A* solved g(n)=0,23898
+Depth solved,39109
+Breadth solved,19019
+A* solved g(n)=0,21320
+A* solved g/4,21315
+A* solved g/2,21643
+Depth solved,9959
+A* solved,25090
+Breadth solved,31793
+A* solved g/2,28201
+A* solved,52067
+A* solved g(n)=0,28080
+A* solved g/4,28389
+Depth solved,10968
+Breadth solved,20354
+Depth solved,14958
+A* solved g(n)=0,17623
+A* solved g/4,17920
+A* solved,29247
+A* solved g/2,17755
+A* solved g(n)=0,20835
+Breadth solved,23394
+A* solved g/2,15775
+A* solved,40271
+A* solved g/4,15320
+Depth solved,32613
+A* solved g/2,28180
+Breadth solved,25548
+A* solved g(n)=0,22988
+A* solved g/4,22742
+A* solved,49393
+Depth solved,8972
+Breadth solved,21736
+Depth solved,20196
+A* solved g/4,34384
+A* solved,31543
+A* solved g(n)=0,34370
+A* solved g/2,34496
+A* solved g(n)=0,37411
+A* solved,49079
+A* solved g/2,32166
+Breadth solved,25167
+Depth solved,29811
+A* solved g/4,32319
+A* solved g(n)=0,40894
+Depth solved,27191
+A* solved,54262
+Breadth solved,27560
+A* solved g/2,35696
+A* solved g/4,35829
+A* solved,32510
+A* solved g/2,23175
+Breadth solved,13775
+Depth solved,7705
+A* solved g(n)=0,23429
+A* solved g/4,23432
+A* solved,43429
+A* solved g/4,27085
+A* solved g(n)=0,27247
+Breadth solved,20308
+A* solved g/2,27131
+Depth solved,25256
+Depth solved,13181
+Breadth solved,22677
+A* solved g(n)=0,12290
+A* solved g/2,12181
+A* solved g/4,12366
+A* solved,41258
+A* solved,47586
+Breadth solved,22147
+Depth solved,27323
+A* solved g/4,31502
+A* solved g/2,31787
+A* solved g(n)=0,31705
+A* solved g(n)=0,29585
+Depth solved,16192
+Breadth solved,16747
+A* solved g/4,24455
+A* solved,32345
+A* solved g/2,24655
+Breadth solved,27716
+A* solved,44485
+Depth solved,39587
+A* solved g/2,34825
+A* solved g(n)=0,34856
+A* solved g/4,34949
+A* solved g(n)=0,45657
+A* solved g/4,40289
+Depth solved,24212
+Breadth solved,23431
+A* solved,45749
+A* solved g/2,40388
+Depth solved,22048
+A* solved g/4,25268
+A* solved g/2,24985
+A* solved g(n)=0,25048
+A* solved,27455
+Breadth solved,15096
+Depth solved,22424
+A* solved g/4,17986
+Breadth solved,12934
+A* solved g(n)=0,18260
+A* solved,22705
+A* solved g/2,18331
+A* solved g(n)=0,17303
+A* solved g/2,12242
+A* solved,26825
+A* solved g/4,12118
+Depth solved,40059
+Breadth solved,13824
+A* solved g(n)=0,17611
+A* solved,32941
+A* solved g/4,11965
+Breadth solved,17552
+A* solved g/2,12296
+Depth solved,16591
+A* solved,48809
+Depth solved,20740
+A* solved g/4,25327
+Breadth solved,23005
+A* solved g/2,25286
+A* solved g(n)=0,25305
+Breadth solved,30789
+A* solved g/2,17591
+A* solved g/4,17405
+Depth solved,38159
+A* solved g(n)=0,17388
+A* solved,48931
+Breadth solved,31926
+Depth solved,22885
+A* solved g(n)=0,51161
+A* solved,52552
+A* solved g/4,51435
+A* solved g/2,51729
+A* solved g(n)=0,26132
+A* solved g/2,21086
+Breadth solved,25480
+A* solved g/4,21057
+Depth solved,21958
+A* solved,45303
+A* solved g/4,50503
+A* solved,45961
+A* solved g(n)=0,45345
+Depth solved,20392
+A* solved g/2,45367
+Breadth solved,23459
+A* solved,46455
+Depth solved,38978
+Breadth solved,22326
+A* solved g/2,15498
+A* solved g/4,16301
+A* solved g(n)=0,15444
+A* solved g/4,23543
+A* solved,37869
+Breadth solved,19829
+A* solved g/2,18389
+Depth solved,28736
+A* solved g(n)=0,18277
+Breadth solved,19362
+A* solved g/2,26453
+A* solved g/4,26480
+Depth solved,41456
+A* solved,27549
+A* solved g(n)=0,26539
+A* solved g(n)=0,40209
+Depth solved,27780
+A* solved g/2,35064
+A* solved,38337
+A* solved g/4,34928
+Breadth solved,20687
+Depth solved,22957
+Breadth solved,15035
+A* solved g/4,10842
+A* solved,25940
+A* solved g(n)=0,10682
+A* solved g/2,10893
+A* solved g/2,16346
+Breadth solved,18518
+A* solved g/4,11309
+Depth solved,32534
+A* solved g(n)=0,10886
+A* solved,33602
+A* solved g/4,39434
+Depth solved,25072
+Breadth solved,21793
+A* solved g(n)=0,33684
+A* solved g/2,34098
+A* solved,42271
+A* solved g(n)=0,24681
+A* solved,29469
+A* solved g/2,19546
+Breadth solved,18360
+A* solved g/4,19364
+Depth solved,5352
+A* solved,48486
+Depth solved,14943
+Breadth solved,22618
+A* solved g/2,20089
+A* solved g(n)=0,20419
+A* solved g/4,20252
+Depth solved,27737
+Breadth solved,43224588
+A* solved g/4,35368
+A* solved g/2,35737
+A* solved g(n)=0,40587
+A* solved,54238
+A* solved g(n)=0,34870
+Breadth solved,25353
+Depth solved,38338
+A* solved g/4,24293
+A* solved g/2,24343
+A* solved,43388
+Breadth solved,36128
+A* solved g/2,36688
+A* solved g/4,36681
+A* solved,45958
+A* solved g(n)=0,36711
+Depth solved,13857
+A* solved g(n)=0,44930
+Depth solved,23064
+A* solved g/4,35333
+Breadth solved,23472
+A* solved g/2,35306
+A* solved,44401
+A* solved,47953
+A* solved g/4,27413
+A* solved g(n)=0,27442
+A* solved g/2,27452
+Depth solved,28583
+Breadth solved,19780
+Breadth solved,35931
+A* solved g(n)=0,48391
+A* solved g/2,48343
+A* solved,51804
+Depth solved,21857
+A* solved g/4,48453
+Breadth solved,35081
+A* solved g/4,17423
+Depth solved,24418
+A* solved g(n)=0,17416
+A* solved,48487
+A* solved g/2,17417
+A* solved g(n)=0,49004
+A* solved g/4,39321
+Breadth solved,24695
+A* solved g/2,39329
+Depth solved,28550
+A* solved,47278
+A* solved g/4,53910
+Depth solved,10894
+Breadth solved,9751
+A* solved g(n)=0,44187
+A* solved g/2,44223
+A* solved,14886
+A* solved g/4,37775
+A* solved g/2,28013
+A* solved,35053
+Breadth solved,19149
+Depth solved,21182
+A* solved g(n)=0,28018
+A* solved,50664
+Depth solved,19083
+A* solved g/4,23844
+Breadth solved,22050
+A* solved g(n)=0,23848
+A* solved g/2,23836
+Breadth solved,22662
+A* solved g/2,13634
+A* solved g/4,13625
+Depth solved,16915
+A* solved g(n)=0,13622
+A* solved,25128
+A* solved,38371
+Depth solved,7493
+Breadth solved,14594
+A* solved g/4,15816
+A* solved g/2,15815
+A* solved g(n)=0,15818
+A* solved g(n)=0,27205
+Breadth solved,17706
+A* solved,33272
+A* solved g/4,17436
+A* solved g/2,17431
+Depth solved,18116
+A* solved,50186
+Breadth solved,21194
+Depth solved,30426
+A* solved g/2,19676
+A* solved g(n)=0,19682
+A* solved g/4,19685
+A* solved g(n)=0,44725
+Breadth solved,18545
+A* solved g/2,48198
+A* solved g/4,48126
+A* solved,34578
+Depth solved,26582
+A* solved g(n)=0,24381
+Breadth solved,21324
+A* solved g/4,14789
+A* solved,41506
+Depth solved,47109
+A* solved g/2,14777
+A* solved g/2,36605
+A* solved g/4,25935
+Depth solved,14617
+A* solved g(n)=0,25967
+Breadth solved,20701
+A* solved,38502
+A* solved g(n)=0,61879
+Depth solved,41778
+Breadth solved,20440
+A* solved g/4,52113
+A* solved,38709
+A* solved g/2,52115
+A* solved,45593
+Depth solved,38097
+A* solved g/2,30388
+A* solved g(n)=0,30379
+A* solved g/4,30457
+Breadth solved,19009
+A* solved g(n)=0,31574
+Depth solved,22927
+A* solved,53675
+A* solved g/4,21934
+Breadth solved,27846
+A* solved g/2,21960
+Breadth solved,34844
+A* solved g(n)=0,49472
+A* solved g/2,49499
+Depth solved,38952
+A* solved,49674
+A* solved g/4,49438
+A* solved,63855
+Breadth solved,27691
+A* solved g(n)=0,49087
+A* solved g/2,48964
+A* solved g/4,48925
+Depth solved,34291
+A* solved,59015
+A* solved g(n)=0,48490
+A* solved g/2,48453
+Breadth solved,25026
+Depth solved,37663
+A* solved g/4,48456
+A* solved g/4,20010
+A* solved g/2,10354
+Depth solved,7746
+A* solved g(n)=0,10376
+A* solved,18215
+Breadth solved,10178
+A* solved g/4,54690
+Breadth solved,25246
+A* solved g/2,45068
+A* solved,49587
+A* solved g(n)=0,44747
+Depth solved,25883
+Depth solved,27073
+A* solved g/2,42362
+A* solved g(n)=0,42339
+Breadth solved,24492
+A* solved g/4,42393
+A* solved,46117
+Breadth solved,30762
+A* solved g/4,33003
+A* solved g/2,40415
+Depth solved,6368
+A* solved g(n)=0,19891
+A* solved,34035
+A* solved,53774
+A* solved g(n)=0,30934
+A* solved g/2,30925
+A* solved g/4,30914
+Depth solved,28967
+Breadth solved,23751
+A* solved,50761
+A* solved g/4,17401
+A* solved g/2,17393
+Depth solved,12968
+Breadth solved,21677
+A* solved g(n)=0,17392
+A* solved g(n)=0,49577
+A* solved g/2,39891
+Breadth solved,21760
+Depth solved,37325
+A* solved g/4,39867
+A* solved,41492
+Breadth solved,35337
+A* solved,48626
+Depth solved,23787
+A* solved g(n)=0,37044
+A* solved g/4,36969
+A* solved g/2,36989
+A* solved g/4,43537
+A* solved,49416
+A* solved g/2,33837
+Depth solved,21993
+Breadth solved,26164
+A* solved g(n)=0,33881
+A* solved g/4,44932
+Depth solved,27913
+A* solved g/2,35046
+A* solved g(n)=0,34745
+Breadth solved,27144
+A* solved,51040
+A* solved g(n)=0,62025
+A* solved g/4,52375
+A* solved,48198
+A* solved g/2,52370
+Breadth solved,25925
+Depth solved,14948
+A* solved,46154
+A* solved g/4,32998
+Breadth solved,19103
+Depth solved,22876
+A* solved g(n)=0,32968
+A* solved g/2,32945
+Depth solved,30703
+Breadth solved,19686
+A* solved g(n)=0,21514
+A* solved g/4,21547
+A* solved g/2,21526
+A* solved,35971
+A* solved g/4,37420
+Depth solved,44372
+A* solved,25941
+Breadth solved,14315
+A* solved g/2,27788
+A* solved g(n)=0,27816
+Depth solved,19168
+A* solved g(n)=0,45537
+A* solved,29141
+A* solved g/4,45540
+Breadth solved,16686
+A* solved g/2,45520
+A* solved g(n)=0,48411
+A* solved g/2,38656
+A* solved g/4,38623
+Breadth solved,26728
+A* solved,50987
+Depth solved,24064
+Breadth solved,27579
+A* solved,34798
+A* solved g/2,18161
+A* solved g(n)=0,11231
+Depth solved,22784
+A* solved g/4,11237
+Depth solved,54510
+A* solved g/2,20028
+A* solved g/4,19770
+A* solved,39618
+A* solved g(n)=0,20042
+Breadth solved,22302
+A* solved g/4,19064
+Depth solved,29482
+A* solved,22984
+A* solved g(n)=0,9418
+Breadth solved,13757
+A* solved g/2,9422
+A* solved g/2,43106
+A* solved,38875
+A* solved g(n)=0,33356
+Breadth solved,20390
+A* solved g/4,33388
+Depth solved,24954
+A* solved g/2,32376
+A* solved,34785
+A* solved g(n)=0,22703
+Breadth solved,19519
+A* solved g/4,22733
+Depth solved,23816
+Depth solved,35732
+A* solved g(n)=0,14804
+A* solved g/2,14800
+A* solved,28805
+A* solved g/4,14818
+Breadth solved,14893
+A* solved g/4,30737
+A* solved g/2,21049
+Breadth solved,19280
+A* solved g(n)=0,21060
+A* solved,35155
+Depth solved,36445
+A* solved,44650
+A* solved g(n)=0,21002
+A* solved g/2,16697
+Depth solved,9584
+Breadth solved,17700
+A* solved g/4,16730
+Breadth solved,23245
+A* solved g/4,21350
+A* solved g(n)=0,21348
+A* solved g/2,21369
+A* solved,26520
+Depth solved,40710
+Depth solved,41440
+A* solved g/2,38481
+A* solved g/4,38502
+Breadth solved,24692
+A* solved g(n)=0,38476
+A* solved,45593

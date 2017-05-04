@@ -8,7 +8,7 @@ from main import BLACK, BLUE, D, R, X, Y
 
 
 class Agent:
-    def __init__(self, gui):
+    def __init__(self):
         self.end = (X * D - D / 2, Y * D - D / 2)
         self.pos = {'x': int(D / 2),
                     'y': int(D / 2)}
@@ -21,13 +21,12 @@ class Agent:
         self.pos_right = dict()
         self.pos_down = dict()
         self.pos_left = dict()
-        self.gui = gui
-        self.stage = self.gui.convert()
-        self.update()
+        self.gui = None
+        self.stage = None
         self.nodes = {}
         self.parent_nodes = set()
         self.child_nodes = set()
-        self.parent_nodes.add((self.pos['x'], self.pos['y']))
+        self.first = True
 
     def neighbours(self):
         if self.pos['x'] <= D:
@@ -51,7 +50,7 @@ class Agent:
             self.pos_down = {'wall': [self.pos['x'], int(self.pos['y'] + D / 2)],
                              'cord': [self.pos['x'], int(self.pos['y'] + D)]}
 
-    def move(self, side=None, step=15):
+    def move(self, side=None, step=D):
         for i in range(int(D / step)):
             if side == 'upp':
                 self.pos['y'] -= step
@@ -65,13 +64,16 @@ class Agent:
         return self.pos['x'], self.pos['y']
 
     def update(self):
+        if self.first:
+            self.gui.blit(self.stage, [0, 0])
+            self.first = False
         Clock().tick(self.fps)
-        self.gui.blit(self.stage, [0, 0])
         draw.circle(self.gui, BLUE, [self.pos['x'], self.pos['y']], R)
         event.pump()
         display.update()
 
     def depth(self):
+        display.set_caption("Mazer: depth search")
         print('Agent.depth')
         while True:
             side = self.side()
@@ -81,10 +83,10 @@ class Agent:
             elif side:
                 side = side[randint(0, side.index(side[-1]))]
                 self.stack.append(side)
-                self.move(side, D)
+                self.move(side)
                 self.log.append([self.pos['x'], self.pos['y']])
             elif self.stack:
-                self.move(self.reverse_side(), D)
+                self.move(self.reverse_side())
                 self.stack.pop()
             else:
                 raise Exception("Depth Error")
@@ -123,12 +125,13 @@ class Agent:
         sides = self.side()
         for i in range(len(sides)):
             self.calc_cord(cell)
-            self.move(sides[i], D)
+            self.move(sides[i])
             self.child_nodes.add((self.pos['x'], self.pos['y']))
             self.log.append([self.pos['x'], self.pos['y']])
 
     def breadth(self):
-        print("Agent.breadth")
+        display.set_caption("Mazer: breadth search")
+        self.parent_nodes.add((self.pos['x'], self.pos['y']))
         while True:
             if self.end in self.child_nodes or self.end in self.parent_nodes:
                 print("breadth done")
@@ -148,7 +151,11 @@ class Agent:
         self.pos['x'] = cell[0]
         self.pos['y'] = cell[1]
 
-    def a_star(self):  # https://en.wikipedia.org/wiki/A*_search_algorithm#Pseudocode
+    def a_star(self, less_g=None):  # https://en.wikipedia.org/wiki/A*_search_algorithm#Pseudocode
+        if less_g is None:
+            display.set_caption("Mazer: A*")
+        else:
+            display.set_caption("Mazer: A*| g x " + str(less_g))
         start = (self.pos['x'], self.pos['y'])
         open_set = Stack()
         closed_set = []
@@ -158,7 +165,7 @@ class Agent:
         while open_set:
             active = open_set.lowest_f()
             if active == self.end:
-                print("A* done")
+                print("A* done", less_g)
                 return "A* solved"
             self.calc_cord(active)
             sides = self.side()
@@ -167,27 +174,30 @@ class Agent:
                 self.calc_cord(active)
                 next_cell = choice(sides)
                 sides.remove(next_cell)
-                next_cell = self.move(next_cell, D)
+                next_cell = self.move(next_cell)
                 if next_cell in closed_set:
                     continue
                 new_g = open_set.read(active)['g'] + 15
                 if next_cell not in open_set:
-                    open_set.add(next_cell, new_g, self.heuristic(next_cell))
+                    open_set.add(next_cell, less_g, new_g, self.heuristic(next_cell))
             open_set.remove(active)
         raise Exception("A* Error")
 
     def heuristic(self, pos):
         x_dist = self.end[0] - pos[0]
         y_dist = self.end[1] - pos[1]
-        return sqrt(x_dist**2 + y_dist**2)
+        return sqrt(x_dist ** 2 + y_dist ** 2)
 
 
 class Stack:
     def __init__(self):
         self.stack = dict()
 
-    def add(self, cell, g=float("inf"), h=float("inf")):
-        self.stack[cell] = {'g': g, 'h': h, 'f': g + h}
+    def add(self, cell, less_g, g=float("inf"), h=float("inf")):
+        if less_g is None:
+            self.stack[cell] = {'g': g, 'h': h, 'f': g + h}
+        else:
+            self.stack[cell] = {'g': g * less_g, 'h': h, 'f': g + h}
 
     def __bool__(self):
         if self.stack:
